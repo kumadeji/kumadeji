@@ -1,3 +1,3 @@
-# Mattia Penna - portfolio
+# Ernest Bagretsov
 My personal website
-http://tiapnn.netlify.app/
+https://kumadeji.netlify.app/
