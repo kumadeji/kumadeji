@@ -136,6 +136,16 @@
       </nav>
     </div>
 
+<!-- скрипт флагов эмодзи -->
+<script>
+const flagemojiToPNG = (flag) => {
+    var countryCode = Array.from(flag, (codeUnit) => codeUnit.codePointAt()).map(char => String.fromCharCode(char-127397).toLowerCase()).join('')
+    return "<img src='https://flagcdn.com/24x18/" + countryCode + ".png'>"
+}
+    var reg = new RegExp('(?:\ud83c[\udde6-\uddff]){2}', 'g');
+    document.body.innerHTML = document.body.innerHTML.replaceAll(reg, flagemojiToPNG);
+</script>
+
     <div class="smooth-scroll-wrapper">
       <section class="content">
         <!-- header -->
@@ -153,12 +163,12 @@
             </h4>
             <p class="paragraph" style="margin: 25px 50px 5px 0">... но уже с широким опытом</p>
 			<p class="paragraph mb-1" style="margin: 0px 50px 5px 0">Специализируюсь на медийных проектах и аудиовизуальном переводе,<br>локализации видеоигр, веб-сайтов и программного обеспечения<br>Владею тайным искусством пользования поисковыми системами 👨‍💻</p>
-			<p class="paragraph mb-1" style="margin: 25px 300px 5px 0">
+			<p class="paragraph mb-1" style="margin: 25px 50px 5px 0">
               Прямиком из далёкого Хабаровска, но всегда на короткой ноге 🌏☕
             </p><br>
             <a
               class="cta"
-              href="https://drive.google.com/file/d/1AZySBQ-DMdHT50gW0G-ojO7jwM0nSl_8/view?usp=sharing"
+              href="https://google.com/"
               target="_blank"
               rel="noopener noreferrer"
               >РЕЗЮМЕ / CV / <span style="font-weight:bolder">経歴</span></a
