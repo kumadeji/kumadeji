@@ -239,8 +239,9 @@
   --color-purple: #8000ff;
   // --color-light-purple: #cf59e6;
   // --color-light-blue: #6bc5f8;
-  --color-light-purple: #09F755;
-  --color-light-blue: #F80332;
+  --color-light-green: #09F755;
+  --color-light-yellow: #EFC518;
+  --color-light-red: #F80332;
 }
 
 .name-container {
@@ -254,9 +255,14 @@
 	color: var(--color-white);
     position: relative;
 
-    background: -webkit-linear-gradient(135deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple));
-    background: -moz-linear-gradient(135deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple));
-    background: linear-gradient(-45deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple));
+    // background: -webkit-linear-gradient(135deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple));
+    // background: -moz-linear-gradient(135deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple));
+    // background: linear-gradient(-45deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple));
+	
+	background: -webkit-linear-gradient(135deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
+    background: -moz-linear-gradient(135deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
+    background: linear-gradient(-45deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
+	
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
