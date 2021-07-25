@@ -244,7 +244,9 @@ section {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 5px;
-	vertical-align: middle;
+  }
+  &-4 img {
+    vertical-align: 5px;
   }
   &-5 {
     font-size: 1.5rem;
