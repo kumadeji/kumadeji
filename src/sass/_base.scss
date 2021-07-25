@@ -205,24 +205,24 @@ section {
 
 // // cursor
 
-// .cursor {
-//     width: 2rem;
-//     height: 2rem;
-//     border: 2.5px solid $white;
-//     border-radius: 50%;
-//     position: absolute;
-//     top: -10rem;
-//     left: -10rem;
-//     pointer-events: none;
-//     transform: translate(-50%, -50%);
-//     transform-origin: 100% 100%;
-//     transition: all .3s ease;
-//     transition-property: background, transform;
+.cursor {
+    width: 2rem;
+    height: 2rem;
+    border: 2.5px solid $white;
+    border-radius: 50%;
+    position: absolute;
+    top: -10rem;
+    left: -10rem;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transform-origin: 100% 100%;
+    transition: all .3s ease;
+    transition-property: background, transform;
 
-//     @media only screen and (max-width: 62.5em) { // tab-land
-//         opacity: 0;
-//     }
-// }
+    @media only screen and (max-width: 62.5em) { // tab-land
+        opacity: 0;
+    }
+}
 
 /*--------------------------
     typography
