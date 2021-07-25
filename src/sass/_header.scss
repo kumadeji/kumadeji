@@ -246,7 +246,7 @@
 
 .name-container {
   @include flexCenter;
-  padding-top: 20px;
+  // padding-top: 20px;
   span {
     font-size: 7.4rem;
     // text-transform: capitalize;
@@ -267,8 +267,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 400% 400%;
-    -webkit-animation: gradient 3s ease infinite;
-    -moz-animation: gradient 3s ease infinite;
+    -webkit-animation: gradient 9s ease infinite;
+    -moz-animation: gradient 9s ease infinite;
     animation: gradient 3s ease infinite;
 	}
 }
