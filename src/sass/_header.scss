@@ -190,6 +190,15 @@
   }
 }
 
+:root {
+  --color-white: #fff;
+  --color-gray: #c4c4c4;
+  --color-black: #000;
+  --color-purple: #8000ff;
+  --color-light-purple: #cf59e6;
+  --color-light-blue: #6bc5f8
+}
+
 .name-container {
   @include flexCenter;
   padding-top: 20px;
@@ -199,10 +208,17 @@
     font-family: $secondary-font;
     text-shadow: 0px 15px 15px $shadows;
   }
-  img {
-    margin-left: 15px;
-    margin-bottom: 10px;
-  }
+  // пошла помидорка
+  background: -webkit-linear-gradient(135deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple));
+  background: -moz-linear-gradient(135deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple));
+  background: linear-gradient(-45deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  -webkit-animation: gradient 3s ease infinite;
+  -moz-animation: gradient 3s ease infinite;
+  animation: gradient 3s ease infinite
 }
 
 // animation
