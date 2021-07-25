@@ -192,43 +192,43 @@
 
 @-webkit-keyframes gradient {
   0% {
-    background-position: 0 50%
+    background-position: 0 50%;
   }
 
   50% {
-    background-position: 100% 50%
+    background-position: 100% 50%;
   }
 
   to {
-    background-position: 0 50%
+    background-position: 0 50%;
   }
 }
 
 @-moz-keyframes gradient {
   0% {
-    background-position: 0 50%
+    background-position: 0 50%;
   }
 
   50% {
-    background-position: 100% 50%
+    background-position: 100% 50%;
   }
 
   to {
-    background-position: 0 50%
+    background-position: 0 50%;
   }
 }
 
 @keyframes gradient {
   0% {
-    background-position: 0 50%
+    background-position: 0 50%;
   }
 
   50% {
-    background-position: 100% 50%
+    background-position: 100% 50%;
   }
 
   to {
-    background-position: 0 50%
+    background-position: 0 50%;
   }
 }
 
@@ -237,8 +237,10 @@
   --color-gray: #c4c4c4;
   --color-black: #000;
   --color-purple: #8000ff;
-  --color-light-purple: #cf59e6;
-  --color-light-blue: #6bc5f8
+  // --color-light-purple: #cf59e6;
+  // --color-light-blue: #6bc5f8;
+  --color-light-purple: #09F755;
+  --color-light-blue: #F80332;
 }
 
 .name-container {
@@ -261,7 +263,7 @@
     background-size: 400% 400%;
     -webkit-animation: gradient 3s ease infinite;
     -moz-animation: gradient 3s ease infinite;
-    animation: gradient 3s ease infinite
+    animation: gradient 3s ease infinite;
 	}
 }
 
