@@ -19,9 +19,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.36111111"
-     inkscape:cx="962.30769"
-     inkscape:cy="430.61538"
+     inkscape:zoom="0.72222222"
+     inkscape:cx="1040.5385"
+     inkscape:cy="411.92308"
      inkscape:window-width="1366"
      inkscape:window-height="705"
      inkscape:window-x="-8"
@@ -90,9 +90,10 @@
        stroke-linecap="round"
        id="path29" />
     <path
-       d="m 961,527.8 v 184"
+       d="M 961,527.13162 V 690.31453"
        stroke="#09f755"
        stroke-linecap="round"
-       id="path29-3" />
+       id="path29-3"
+       style="stroke-width:12.2426" />
   </g>
 </svg>
