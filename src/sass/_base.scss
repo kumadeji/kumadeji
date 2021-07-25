@@ -246,7 +246,8 @@ section {
     letter-spacing: 5px;
   }
   &-4 img {
-    vertical-align: inherit;
+    display: flex;
+    align-items: center;
   }
   &-5 {
     font-size: 1.5rem;
