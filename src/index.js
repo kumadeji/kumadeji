@@ -138,11 +138,10 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   };
 });
 
-//message to all the developers out there
+// мусор в консоль
 const message =
-  "Nice to see you around here! Send me a message if you want to reuse my portfolio template or you want explanations of any features! Cheers!";
-console.group("Hey developer!");
+  "Любознательность – это фитиль в свече жизни. 🐺☝️";
+console.group("Привет! 👋");
 console.log(message);
-console.log("%cMattia P - tiapnn@yahoo.it", "font-size:20px");
-console.log("%c🍝🥘", "font-size:100px");
+console.log("%cЭрнест Багрецов - kumadeji@yandex.ru", "font-size:20px");
 console.groupEnd();
