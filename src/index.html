@@ -409,13 +409,13 @@ const flagemojiToPNG = (flag) => {
         });
 		
     function appendData(data) {
-        var mainContainer = document.getElementById("test");
+        var mainContainer = document.getElementById("l-profile-freel__info-item");
         var div = document.createElement("span");
         div.innerHTML = ((Math.round(data.translatedWordCount / 1000) * 1000)/1000) + ' ' + data.completedProjectCount;
         mainContainer.appendChild(div);
     }
 </script>
-<span id="test"></div>
+<div id="l-profile-freel__info-item"></div>
 			  
 			  <div class="test-sc-container" style="outline: 1px solid #666; background-color: #eee">
                 <div class="l-profile-freel__avatar">
