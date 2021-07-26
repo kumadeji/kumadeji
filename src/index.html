@@ -400,33 +400,16 @@ const flagemojiToPNG = (flag) => {
 			  Hello, today is <?php echo date('l, F jS, Y'); ?>.
 			  <div id="sctest"></div>
 <script>
-    // fetch('https://ru.smartcat.com/proxycat/api/freelancers/profile/ernest-bagretsov')
-    //     .then(function (response) {
-    //         return response.json();
-    //     })
-    //     .then(function (data) {
-    //         appendData(data);
-    //     })
-    //     .catch(function (err) {
-    //         console.log('error: ' + err);
-    //     });
-		
-	fetch("https://ru.smartcat.com/proxycat/api/freelancers/profile/ernest-bagretsov", {
-          method: "GET",
-          headers: {
-        
-          },
-          credentials: "same-origin"
-        }).then(function(response) {
-          response.status
-          response.statusText
-          response.headers
-          response.url
-        
-          return response.text()
-        }).catch(function(error) {
-          error.message
+    fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('https://ru.smartcat.com/proxycat/api/freelancers/profile/ernest-bagretsov')}`)
+        .then(function (response) {
+            return response.json();
         })
+        .then(function (data) {
+            appendData(data);
+        })
+        .catch(function (err) {
+            console.log('error: ' + err);
+        });
 		
     function appendData(data) {
         var mainContainer = document.getElementById("sctest");
@@ -436,7 +419,7 @@ const flagemojiToPNG = (flag) => {
             mainContainer.appendChild(div);
         }
     }
-</script> -->
+</script>
 			  
 			  <div class="test-sc-container" style="outline: 1px solid #666; background-color: #eee">
                 <div class="l-profile-freel__avatar">
