@@ -410,7 +410,7 @@ const flagemojiToPNG = (flag) => {
 		
     function appendData(data) {
         var mainContainer = document.getElementById("test");
-        var div = document.createElement("div");
+        var div = document.createElement("span");
         div.innerHTML = ((Math.round(data.translatedWordCount / 1000) * 1000)/1000) + ' ' + data.completedProjectCount;
         mainContainer.appendChild(div);
     }
