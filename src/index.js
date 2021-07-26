@@ -78,7 +78,8 @@ function getQuotes() {
 }
 getQuotes();
 
-function getSmartCAT() {(async ()=> {
+function getSmartCAT() {
+	(async ()=> {
     let answer = await fetch('https://ru.smartcat.com/proxycat/api/freelancers/profile/ernest-bagretsov'), data = await answer.json();
  
     document.querySelector('#res').insertAdjacentHTML('afterBegin', `
