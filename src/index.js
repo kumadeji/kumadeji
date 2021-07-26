@@ -78,18 +78,6 @@ function getQuotes() {
 }
 getQuotes();
 
-function getSmartCAT() {
-	(async ()=> {
-    let answer = await fetch('https://ru.smartcat.com/proxycat/api/freelancers/profile/ernest-bagretsov'), data = await answer.json();
- 
-    document.querySelector('#res').insertAdjacentHTML('afterBegin', `
-        translatedWordCount : ${data.translatedWordCount} <br>
-        completedProjectCount : ${data.completedProjectCount}
-    `);
-})();
-}
-getSmartCAT();
-
 function shuffleQuotes(allQuotes) {
   let randomQuote = getRandomQuote(allQuotes);
   toggleTransition();
