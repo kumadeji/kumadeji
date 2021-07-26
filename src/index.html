@@ -398,18 +398,36 @@ const flagemojiToPNG = (flag) => {
 			  
 			  <!-- <div id="res"></div> -->
 			  Hello, today is <?php echo date('l, F jS, Y'); ?>.
-			  <!-- <div id="sctest"></div>
+			  <div id="sctest"></div>
 <script>
-    fetch('https://ru.smartcat.com/proxycat/api/freelancers/profile/ernest-bagretsov')
-        .then(function (response) {
-            return response.json();
+    // fetch('https://ru.smartcat.com/proxycat/api/freelancers/profile/ernest-bagretsov')
+    //     .then(function (response) {
+    //         return response.json();
+    //     })
+    //     .then(function (data) {
+    //         appendData(data);
+    //     })
+    //     .catch(function (err) {
+    //         console.log('error: ' + err);
+    //     });
+		
+	fetch("https://ru.smartcat.com/proxycat/api/freelancers/profile/ernest-bagretsov", {
+          method: "GET",
+          headers: {
+        
+          },
+          credentials: "same-origin"
+        }).then(function(response) {
+          response.status
+          response.statusText
+          response.headers
+          response.url
+        
+          return response.text()
+        }).catch(function(error) {
+          error.message
         })
-        .then(function (data) {
-            appendData(data);
-        })
-        .catch(function (err) {
-            console.log('error: ' + err);
-        });
+		
     function appendData(data) {
         var mainContainer = document.getElementById("sctest");
         for (var i = 0; i < data.length; i++) {
