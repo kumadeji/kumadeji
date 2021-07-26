@@ -1817,13 +1817,14 @@ a:focus {
 .l-profile-freel__avatar {
   float: left;
   position: relative;
-  z-index: 1
+  z-index: 1;
+  margin: 5px
 }
 
 .l-profile-freel__data {
-  margin: 0 0 16px 0;
+  //margin: 0 0 16px 0;
   padding-left: 120px;
-  min-height: 116px;
+  //min-height: 116px;
   position: relative
 }
 
@@ -1831,8 +1832,9 @@ a:focus {
   color: #424242;
   font-weight: 600;
   font-size: 24px;
-  display: inline-block;
-  margin-bottom: 8px;
+  //display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 10px;
   line-height: 1.2;
   white-space: nowrap;
   overflow: hidden;
