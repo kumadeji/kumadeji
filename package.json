@@ -1,11 +1,11 @@
 {
-  "name": "mattiapenna-portfolio",
+  "name": "kumadeji",
   "version": "1.0.0",
   "engines": {
     "node": "14.1.0",
     "npm": "6.14.4"
   },
-  "description": "Mattia Penna personal portfolio",
+  "description": "Ernest Bagretsov - Portfolio",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
@@ -21,19 +21,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tiapnn/mattiapenna-portfolio.git"
+    "url": "git+https://github.com/kumadeji/kumadeji.git"
   },
   "keywords": [
-    "Mattia",
-    "Penna",
-    "portfolio",
-    "Software",
-    "Developer"
+	"kumadeji",
+	"Ernest Bagretsov",
+	"Эрнест Багрецов",
+	"портфолио",
+	"резюме",
+	"опыт",
+	"локализация",
+	"локализатор",
+	"перевод",
+	"переводчик",
+	"аудиовизуальный",
+	"видеоигры",
+	"игры"
   ],
-  "author": "tiapnn",
+  "author": "kumadeji",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tiapnn/mattiapenna-portfolio/issues"
+    "url": "https://github.com/kumadeji/kumadeji/issues"
   },
-  "homepage": "https://github.com/tiapnn/mattiapenna-portfolio#readme"
+  "homepage": "https://github.com/kumadeji/kumadeji#readme"
 }
