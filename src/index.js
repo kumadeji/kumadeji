@@ -122,9 +122,11 @@ function getSmartCat() {
   .then((data) => {
 var translatedWordCount = document.getElementById('translatedWordCount');
 var completedProjectCount = document.getElementById('completedProjectCount');
+var completedProjectText = document.getElementById('completedProjectText');
 
 translatedWordCount.innerHTML = ((Math.round(data.translatedWordCount / 1000) * 1000)/1000) + ' тыс ';
-completedProjectCount.innerHTML = declOfNum(data.completedProjectCount, ['проект', 'проекта', 'проектов']);
+completedProjectCount.innerHTML = data.completedProjectCount;
+completedProjectText.innerHTML = declOfNum(completedProjectCount.innerHTML, ['проект', 'проекта', 'проектов']);
   });
 }
 getSmartCat();
