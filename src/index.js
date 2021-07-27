@@ -110,6 +110,25 @@ function onTransitionEnd() {
   quote.classList.add("fade");
 }
 
+function declOfNum(number, words) {  
+    return number +' '+ words[(number % 100 > 4 && number % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(number % 10 < 5) ? Math.abs(number) % 10 : 5]];
+}
+
+function getSmartCat() {
+  fetch("https://jsonp.afeld.me/?callback=&url=https%3A%2F%2Fru.smartcat.com%2Fproxycat%2Fapi%2Ffreelancers%2Fprofile%2Fernest-bagretsov")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+var translatedWordCount = document.getElementById('translatedWordCount');
+var completedProjectCount = document.getElementById('completedProjectCount');
+
+translatedWordCount.innerHTML = declOfNum(data.translatedWordCount, ['слово', 'слова', 'слов']);
+completedProjectCount.innerHTML = declOfNum(data.completedProjectCount, ['проект', 'проекта', 'проектов']);
+  });
+}
+getSmartCat();
+
 //scroll anchor links fixed
 let switchView = function (hash = location.hash, adjust = 350) {
   try {

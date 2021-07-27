@@ -396,27 +396,6 @@ const flagemojiToPNG = (flag) => {
               <h3 class="heading-3 mb-0">Статистика SmartCAT</h3>
               <p class="paragraph mb-s">Поскольку большая часть моих переводов — это проекты на <strong style="color: black">SmartCAT</strong>, личная статистика — <strong style="color: black">мой ключевой показатель</strong>.</p>
 			  
-<script>
-    fetch(`https://jsonp.afeld.me/?callback=&url=https%3A%2F%2Fru.smartcat.com%2Fproxycat%2Fapi%2Ffreelancers%2Fprofile%2Fernest-bagretsov`)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            appendData(data);
-        })
-        .catch(function (err) {
-            console.log('счетчик наебнулся: ' + err);
-        });
-		
-    function appendData(data) {
-        var mainContainer = document.getElementById("l-profile-freel__info-item");
-        var div = document.createElement("span");
-        div.innerHTML = ((Math.round(data.translatedWordCount / 1000) * 1000)/1000) + ' ' + data.completedProjectCount;
-        mainContainer.appendChild(div);
-    }
-</script>
-<div id="l-profile-freel__info-item"></div>
-			  
 			  <div class="test-sc-container" style="outline: 1px solid #666; background-color: #eee">
                 <div class="l-profile-freel__avatar">
                 <div class="g-avatar g-avatar_size_xxl" style="background-image: url(img/png/me.png)"></div>
@@ -427,10 +406,12 @@ const flagemojiToPNG = (flag) => {
                 </div>
                 <div>
                 <div class="l-profile-freel__info-item">
-                <span class="g-icon g-icon_words g-icon_grey-400 g-icon_size_16px"></span> <span class="g-text_weight_semibold g-text_size_m">107 тыс</span> слов
+                <!-- <span class="g-icon g-icon_words g-icon_grey-400 g-icon_size_16px"></span> <span class="g-text_weight_semibold g-text_size_m">107 тыс</span> слов -->
+				<span class="g-icon g-icon_words g-icon_grey-400 g-icon_size_16px"></span> <span class="g-text_weight_semibold g-text_size_m" id="translatedWordCount"></span>
                 </div>
                 <div class="l-profile-freel__info-item">
-                <span class="g-icon g-icon_projects g-icon_grey-400 g-icon_size_16px"></span> <span class="g-text_weight_semibold g-text_size_m">16</span> проекты
+                <!-- <span class="g-icon g-icon_projects g-icon_grey-400 g-icon_size_16px"></span> <span class="g-text_weight_semibold g-text_size_m">16</span> проекты -->
+				<span class="g-icon g-icon_projects g-icon_grey-400 g-icon_size_16px"></span> <span class="g-text_weight_semibold g-text_size_m" id="completedProjectCount"></span>
                 </div>
                 </div>
                 </div>
