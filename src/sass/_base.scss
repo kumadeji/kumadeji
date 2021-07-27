@@ -48,7 +48,8 @@ $shadows: #00000029;
 //breakpoints
 
 $bp-mobile: 426px;
-$bp-tablet: 769px;
+// $bp-tablet: 769px;
+$bp-tablet: 1024px;
 $bp-4k: 1300px;
 
 /*--------------------------
@@ -265,6 +266,8 @@ section {
     button
 ---------------------------*/
 .cta {
+  display: inline-grid;
+  margin-right: 5px;
   background-color: $primary-color;
   padding: 1.5rem 3rem;
   text-decoration: none;
