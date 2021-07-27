@@ -123,7 +123,7 @@ function getSmartCat() {
 var translatedWordCount = document.getElementById('translatedWordCount');
 var completedProjectCount = document.getElementById('completedProjectCount');
 
-translatedWordCount.innerHTML = ((Math.round(data.translatedWordCount / 1000) * 1000)/1000) + ' тыс слов';
+translatedWordCount.innerHTML = ((Math.round(data.translatedWordCount / 1000) * 1000)/1000) + ' тыс ';
 completedProjectCount.innerHTML = declOfNum(data.completedProjectCount, ['проект', 'проекта', 'проектов']);
   });
 }
