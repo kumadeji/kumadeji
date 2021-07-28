@@ -542,17 +542,17 @@ const flagemojiToPNG = (flag) => {
       const content = document.querySelector("section");
       let currentPos = window.pageYOffset;
 
-      // const callDistort = function () {
-      //   const newPos = window.pageYOffset;
-      //   const diff = newPos - currentPos;
-      //   const speed = diff * 0.07;
-	  // 
-      //   content.style.transform = "skewY(" + speed + "deg)";
-      //   currentPos = newPos;
-      //   requestAnimationFrame(callDistort);
-      // };
+      const callDistort = function () {
+        const newPos = window.pageYOffset;
+        const diff = newPos - currentPos;
+        const speed = diff * 0.07;
+	  
+        content.style.transform = "skewY(" + speed + "deg)";
+        currentPos = newPos;
+        requestAnimationFrame(callDistort);
+      };
 
-      // callDistort();
+      callDistort();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
     <script src="./index.js"></script>
