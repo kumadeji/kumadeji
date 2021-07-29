@@ -146,7 +146,7 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: $black;
+    background-color: #f5f5f5;
     z-index: 20;
 
     #logo {
@@ -154,7 +154,25 @@ section {
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-    }
+		
+        font-size: 7.4rem;
+        font-family: $secondary-font;
+        text-shadow: 0px 15px 15px $shadows;
+	    color: var(--color-white);
+	    
+	    background: -webkit-linear-gradient(135deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
+        background: -moz-linear-gradient(135deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
+        background: linear-gradient(-45deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
+	    
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400% 400%;
+        -webkit-animation: gradient 10s ease infinite;
+        -moz-animation: gradient 10s ease infinite;
+        animation: gradient 10s ease infinite;
+	}
+	
     #logo path:nth-child(1) {
         stroke-width: 1;
         stroke-dasharray: 393.5;
