@@ -134,7 +134,6 @@ body {
   margin-bottom: 8px
 }
 
-
 /* verified button sc */
 .g-icon_check:before {
     content: "\F127";
@@ -173,7 +172,7 @@ body {
     margin-bottom: 4px;
     border-radius: 2px;
     position: relative;
-    cursor: pointer;
+	/* cursor: pointer; */
     height: 16px;
     line-height: 16px;
     padding: 0 4px;
