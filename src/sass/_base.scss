@@ -195,42 +195,120 @@ section {
     	letter-spacing: 3px;
 	}
 	
-    #preloader-text-main path:nth-child(1), #preloader-text-over path:nth-child(1), preloader-text-under path:nth-child(1) {
+    #preloader-text-main path:nth-child(1) {
         stroke-width: 1;
         stroke-dasharray: 393.5;
         stroke-dashoffset: 393.5;
         animation: line-anim 2s ease forwards;
     }
-    #preloader-text-main path:nth-child(2), #preloader-text-over path:nth-child(2), preloader-text-under path:nth-child(2) {
+	#preloader-text-over path:nth-child(1) {
+        stroke-width: 1;
+        stroke-dasharray: 393.5;
+        stroke-dashoffset: 393.5;
+        animation: line-anim 2s ease forwards;
+    }
+	#preloader-text-under path:nth-child(1) {
+        stroke-width: 1;
+        stroke-dasharray: 393.5;
+        stroke-dashoffset: 393.5;
+        animation: line-anim 2s ease forwards;
+    }
+	
+    #preloader-text-main path:nth-child(2) {
         stroke-width: 1;
         stroke-dasharray: 430;
         stroke-dashoffset: 430;
         animation: line-anim 2s ease forwards .3s;
     }
-    #preloader-text-main path:nth-child(3), #preloader-text-over path:nth-child(3), preloader-text-under path:nth-child(3) {
+	#preloader-text-over path:nth-child(2) {
+        stroke-width: 1;
+        stroke-dasharray: 430;
+        stroke-dashoffset: 430;
+        animation: line-anim 2s ease forwards .3s;
+    }
+	#preloader-text-under path:nth-child(2) {
+        stroke-width: 1;
+        stroke-dasharray: 430;
+        stroke-dashoffset: 430;
+        animation: line-anim 2s ease forwards .3s;
+    }
+	
+    #preloader-text-main path:nth-child(3) {
         stroke-width: 1;
         stroke-dasharray: 413;
         stroke-dashoffset: 413;
         animation: line-anim 2s ease forwards .6s;
     }
-    #preloader-text-main path:nth-child(4), #preloader-text-over path:nth-child(4), preloader-text-under path:nth-child(4) {
+	#preloader-text-over path:nth-child(3) {
+        stroke-width: 1;
+        stroke-dasharray: 413;
+        stroke-dashoffset: 413;
+        animation: line-anim 2s ease forwards .6s;
+    }
+	#preloader-text-under path:nth-child(3) {
+        stroke-width: 1;
+        stroke-dasharray: 413;
+        stroke-dashoffset: 413;
+        animation: line-anim 2s ease forwards .6s;
+    }
+	
+    #preloader-text-main path:nth-child(4) {
         stroke-width: 1;
         stroke-dasharray: 290;
         stroke-dashoffset: 290;
         animation: line-anim 2s ease forwards .9s;
     }
-    #preloader-text-main path:nth-child(5), #preloader-text-over path:nth-child(5), preloader-text-under path:nth-child(5) {
+	#preloader-text-over path:nth-child(4) {
+        stroke-width: 1;
+        stroke-dasharray: 290;
+        stroke-dashoffset: 290;
+        animation: line-anim 2s ease forwards .9s;
+    }
+	#preloader-text-under path:nth-child(4) {
+        stroke-width: 1;
+        stroke-dasharray: 290;
+        stroke-dashoffset: 290;
+        animation: line-anim 2s ease forwards .9s;
+    }
+	
+    #preloader-text-main path:nth-child(5) {
         stroke-width: 1;
         stroke-dasharray: 187;
         stroke-dashoffset: 187;
         animation: line-anim 2s ease forwards 1.2s;
     }
-    #preloader-text-main path:nth-child(6), #preloader-text-over path:nth-child(6), preloader-text-under path:nth-child(6) {
+	#preloader-text-over path:nth-child(5) {
+        stroke-width: 1;
+        stroke-dasharray: 187;
+        stroke-dashoffset: 187;
+        animation: line-anim 2s ease forwards 1.2s;
+    }
+	#preloader-text-under path:nth-child(5) {
+        stroke-width: 1;
+        stroke-dasharray: 187;
+        stroke-dashoffset: 187;
+        animation: line-anim 2s ease forwards 1.2s;
+    }
+	
+    #preloader-text-main path:nth-child(6) {
         stroke-width: 1;
         stroke-dasharray: 393;
         stroke-dashoffset: 393;
         animation: line-anim 2s ease forwards 1.5s;
     }
+	#preloader-text-over path:nth-child(6) {
+        stroke-width: 1;
+        stroke-dasharray: 393;
+        stroke-dashoffset: 393;
+        animation: line-anim 2s ease forwards 1.5s;
+    }
+	#preloader-text-under path:nth-child(6) {
+        stroke-width: 1;
+        stroke-dasharray: 393;
+        stroke-dashoffset: 393;
+        animation: line-anim 2s ease forwards 1.5s;
+    }
+	
 }
 
 @keyframes line-anim {
