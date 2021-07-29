@@ -168,8 +168,8 @@ body {
 }
 .g-cardfreel__badge {
     color: #fff;
-    margin-right: 4px;
-    margin-bottom: 4px;
+    /* margin-right: 4px; */
+    /* margin-bottom: 4px; */
     border-radius: 2px;
     position: relative;
 	/* cursor: pointer; */
