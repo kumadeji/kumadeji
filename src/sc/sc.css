@@ -145,8 +145,8 @@ body {
     position: relative;
 }
 .g-btn {
-    font-size: 11px;
-    cursor: pointer;
+    font-size: 10px;
+    /* cursor: pointer; */
     border: none;
     height: 24px;
     line-height: 24px;
