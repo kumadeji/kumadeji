@@ -52,7 +52,7 @@
       z-index: 1;
       display: flex;
       .box {
-        background-image: linear-gradient(#ffa8a8 10%, #fcff00 100%);
+        background-image: linear-gradient(#efc518f5 10%, #09f755f5 100%);
         width: calc(100vw / 4);
         height: 0vh;
       }
@@ -88,7 +88,7 @@
         margin-bottom: 50px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        // justify-content: space-between;
         // min-height: 25rem;
         .social-links {
           display: flex;
