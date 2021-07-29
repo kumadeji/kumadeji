@@ -133,3 +133,52 @@ body {
   font-weight: 400;
   margin-bottom: 8px
 }
+
+
+/* verified button sc */
+.g-icon_check:before {
+    content: "\F127";
+}
+.g-icon_size_8px {
+    font-size: 8px;
+    line-height: 1;
+    height: 8px;
+    position: relative;
+}
+.g-btn {
+    font-size: 11px;
+    cursor: pointer;
+    border: none;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    padding: 0 4px;
+    font-weight: 400;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    white-space: nowrap;
+    overflow: visible;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.g-btn,
+.g-btn span {
+    position: relative;
+}
+.g-cardfreel__badge {
+    color: #fff;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 4px;
+    font-weight: 400;
+}
+.g-cardfreel__badge_tested {
+    background: #77b148;
+}
