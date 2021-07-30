@@ -466,14 +466,20 @@ const flagemojiToPNG = (flag) => {
 				<a href="https://teletype.in/" rel="noopener noreferrer" style="text-decoration: none;">
 				<img class="grow" src="./img/png/teletype-circle.png" alt="teletype" width="24px" height="24px">
 				</a>
-				<img class="grow" src="./img/svg/discord.svg" alt="discord" onclick="copyDiscord()">
-				<input type = "text" value="text which you want copy" id="nameDiscord" hidden>
+				<span onclick="copy(this)">
+				<img class="grow" src="./img/svg/discord.svg" alt=".kumadeji ☕#9753" onclick="copyDiscord()">
+				</span>
 				<script>
-				function copyDiscord() {
-				  var copyText = document.getElementById("nameDiscord");
-				  copyText.select();
-				  document.execCommand("copy");
-				  alert("Скопировано: " + copyText.value);
+				function copy(that){
+				  var inp = document.createElement('input');
+				  var alt = that.children[0].getAttribute("alt");
+				  console.log("Copy:", alt);
+				  alert("Скопировано: " + alt);
+				  document.body.appendChild(inp)
+				  inp.value = alt
+				  inp.select();
+				  document.execCommand('copy',false);
+				  inp.remove();
 				}
 				</script>
                 </div>
