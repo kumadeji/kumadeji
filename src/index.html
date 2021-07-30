@@ -469,19 +469,6 @@ const flagemojiToPNG = (flag) => {
 				<span onclick="copy(this)">
 				<img class="grow" src="./img/svg/discord.svg" alt=".kumadeji ☕#9753" width="24px" height="24px">
 				</span>
-				<script>
-				function copy(that){
-				  var inp = document.createElement('input');
-				  var alt = that.children[0].getAttribute("alt");
-				  console.log("Copy:", alt);
-				  alert("Скопировано: " + alt);
-				  document.body.appendChild(inp)
-				  inp.value = alt
-				  inp.select();
-				  document.execCommand('copy',false);
-				  inp.remove();
-				}
-				</script>
                 </div>
               </div>
               <div
@@ -511,7 +498,21 @@ const flagemojiToPNG = (flag) => {
         </footer>
       </section>
     </div>
-
+	
+	<script>
+	function copy(that){
+	  var inp = document.createElement('input');
+	  var alt = that.children[0].getAttribute("alt");
+	  console.log("Скопировано:", alt);
+	  alert("Скопировано: " + alt);
+	  document.body.appendChild(inp)
+	  inp.value = alt
+	  inp.select();
+	  document.execCommand('copy',false);
+	  inp.remove();
+	}
+	</script>
+	
     <script>
       // smooth scroll
       const body = document.body,
