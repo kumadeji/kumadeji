@@ -114,7 +114,7 @@
 				<a href="https://teletype.in/" rel="noopener noreferrer" >
 				<img class="grow" src="./img/png/teletype-circle.png" alt="teletype">
 				</a>
-				<img class="grow" src="./img/svg/discord.svg" alt="discord" onclick="copyDiscord()">
+				<img class="grow" src="./img/svg/discord.svg" alt="discord">
               </div>
             </div>
             <!-- 
@@ -454,21 +454,19 @@ const flagemojiToPNG = (flag) => {
                   >здесь будет кнопка</a
                 ><br />
                 <div class="anchors mt-m">
-			    <a href="https://ru.smartcat.com/marketplace/user/ernest-bagretsov" rel="noopener noreferrer" style="text-decoration: none;">
-				<img class="grow" src="./img/png/smartcat-circle.png" alt="smartcat" width="24px" height="24px">
-				</a>
-                <a href="https://github.com/kumadeji" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-				<img class="grow" src="./img/svg/github.svg" alt="github" width="24px" height="24px">
-				</a>
-                <a href="https://www.linkedin.com/in/kumadeji/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-				<img class="grow" src="./img/svg/linkedin.svg" alt="linkedin" width="24px" height="24px">
-				</a>
-				<a href="https://teletype.in/" rel="noopener noreferrer" style="text-decoration: none;">
-				<img class="grow" src="./img/png/teletype-circle.png" alt="teletype" width="24px" height="24px">
-				</a>
-				<span onclick="copy(this)">
-				<img class="grow" src="./img/svg/discord.svg" alt=".kumadeji ☕#9753" width="24px" height="24px">
-				</span>
+			      <a href="https://ru.smartcat.com/marketplace/user/ernest-bagretsov" rel="noopener noreferrer" style="text-decoration: none;">
+				  <img class="grow" src="./img/png/smartcat-circle.png" alt="smartcat" width="24px" height="24px">
+				  </a>
+                  <a href="https://github.com/kumadeji" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+				  <img class="grow" src="./img/svg/github.svg" alt="github" width="24px" height="24px">
+				  </a>
+                  <a href="https://www.linkedin.com/in/kumadeji/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+				  <img class="grow" src="./img/svg/linkedin.svg" alt="linkedin" width="24px" height="24px">
+				  </a>
+				  <a href="https://teletype.in/" rel="noopener noreferrer" style="text-decoration: none;">
+				  <img class="grow" src="./img/png/teletype-circle.png" alt="teletype" width="24px" height="24px">
+				  </a>
+				  <img class="grow" src="./img/svg/discord.svg" alt=".kumadeji ☕#9753" width="24px" height="24px">
                 </div>
               </div>
               <div
@@ -498,21 +496,7 @@ const flagemojiToPNG = (flag) => {
         </footer>
       </section>
     </div>
-	
-	<script>
-	function copy(that){
-	  var inp = document.createElement('input');
-	  var alt = that.children[0].getAttribute("alt");
-	  console.log("Скопировано:", alt);
-	  alert("Скопировано: " + alt);
-	  document.body.appendChild(inp)
-	  inp.value = alt
-	  inp.select();
-	  document.execCommand('copy',false);
-	  inp.remove();
-	}
-	</script>
-	
+
     <script>
       // smooth scroll
       const body = document.body,
