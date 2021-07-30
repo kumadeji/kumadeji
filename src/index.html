@@ -114,14 +114,7 @@
 				<a href="https://teletype.in/" rel="noopener noreferrer" >
 				<img class="grow" src="./img/png/teletype-circle.png" alt="teletype">
 				</a>
-				<button id="demo" onclick="copyToClipboard(document.getElementById('demo').innerHTML)">This is what I want to copy
-				<img class="grow" src="./img/svg/discord.svg" alt="discord">
-				</button>
-				<script>
-				function copyToClipboard(text) {
-				  window.prompt("Скопировать никнейм: Ctrl+C, Enter", text);
-				}
-				</script>
+				<img class="grow" src="./img/svg/discord.svg" alt="discord" onclick="copyDiscord()">
               </div>
             </div>
             <!-- 
@@ -473,9 +466,16 @@ const flagemojiToPNG = (flag) => {
 				<a href="https://teletype.in/" rel="noopener noreferrer" style="text-decoration: none;">
 				<img class="grow" src="./img/png/teletype-circle.png" alt="teletype" width="24px" height="24px">
 				</a>
-				<button id="demo" onclick="copyToClipboard(document.getElementById('demo').innerHTML)">This is what I want to copy
-				<img class="grow" src="./img/svg/discord.svg" alt="discord">
-				</button>
+				<img class="grow" src="./img/svg/discord.svg" alt="discord" onclick="copyDiscord()">
+				<input type = "text" value="text which you want copy" id="nameDiscord" hidden>
+				<script>
+				function copyDiscord() {
+				  var copyText = document.getElementById("nameDiscord");
+				  copyText.select();
+				  document.execCommand("copy");
+				  alert("Скопировано: " + copyText.value);
+				}
+				</script>
                 </div>
               </div>
               <div
