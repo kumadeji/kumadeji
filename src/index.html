@@ -117,6 +117,20 @@
 				<a href="https://google.com" rel="noopener noreferrer" >
 				<img class="grow" src="./img/svg/discord.svg" alt="discord">
 				</a>
+				
+				<button title="Message needs to be shown" onclick="copyToClipboard('#text')">
+				<img class="grow" src="./img/svg/discord.svg" alt="discord">
+				</button>
+				<script>
+				function copyToClipboard(element) {
+				  var $temp = $("<input>");
+				  $("body").append($temp);
+				  $temp.val($(element).text()).select();
+				  document.execCommand("copy");
+				  $temp.remove();
+				}
+				</script>
+				<p id="text">.kumadeji ☕#9753</p>
               </div>
             </div>
             <!-- 
