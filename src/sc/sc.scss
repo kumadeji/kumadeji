@@ -1,6 +1,6 @@
 @font-face {
   font-family: font-icons;
-  src: url(fonts/font-icons.bcb27e8d4f0fd4646a7f.woff) format("woff")
+  src: url(fonts/font-icons.bcb27e8d4f0fd4646a7f.woff) format("woff");
 }
 
 .g-icon:before {
@@ -13,57 +13,57 @@
   text-decoration: none;
   text-transform: none;
   line-height: 1;
-  display: block
+  display: block;
 }
 
 .g-icon_projects:before {
-  content: "\F206"
+  content: "\F206";
 }
 
 .g-icon_words:before {
-  content: "\F235"
+  content: "\F235";
 }
 
 @font-face {
   font-family: Inter;
   src: url(fonts/Inter-Regular.woff2) format("woff2");
   font-style: normal;
-  font-weight: 400
+  font-weight: 400;
 }
 
 @font-face {
   font-family: Inter;
   src: url(fonts/Inter-SemiBold.woff2) format("woff2");
   font-style: normal;
-  font-weight: 600
+  font-weight: 600;
 }
 
 .g-icon {
   line-height: 1;
   display: inline-block;
-  vertical-align: text-bottom
+  vertical-align: text-bottom;
 }
 
 .g-icon_size_16px {
   font-size: 16px;
   line-height: 1;
   height: 16px;
-  position: relative
+  position: relative;
 }
 
 .g-icon_grey-400 {
-  color: #bdbdbd
+  color: #bdbdbd;
 }
 
 .g-text_size_m {
-  font-size: 15px
+  font-size: 15px;
   @media (max-width: $bp-mobile) {
     font-size: 13px;
   }
 }
 
 .g-text_weight_semibold {
-  font-weight: 600
+  font-weight: 600;
 }
 
 .g-avatar {
@@ -80,14 +80,14 @@
   text-align: center;
   background-size: contain;
   background-position: 50%;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
 }
 
 .g-avatar_size_xxl {
   height: 90px;
   width: 90px;
   line-height: 90px;
-  font-size: 38px
+  font-size: 38px;
   @media (max-width: $bp-mobile) {
     height: 70px;
     width: 70px;
@@ -108,19 +108,19 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .l-profile-freel__avatar {
   float: left;
   position: relative;
   z-index: 1;
-  margin: 5px
+  margin: 5px;
 }
 
 .l-profile-freel__data {
   padding-left: 120px;
-  position: relative
+  position: relative;
   @media (max-width: $bp-mobile) {
     padding-left: 85px;
   }
@@ -135,7 +135,7 @@ body {
   line-height: 1.2;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis
+  text-overflow: ellipsis;
   @media (max-width: $bp-mobile) {
     font-size: 16px;
   }
@@ -144,5 +144,5 @@ body {
 .l-profile-freel__info-item {
   color: #000;
   font-weight: 400;
-  margin-bottom: 8px
+  margin-bottom: 8px;
 }
