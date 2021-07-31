@@ -314,9 +314,9 @@
   transform: rotate(45deg) translate(-7px, -8px);
 }
 
-.flags-adjust {
-  display: none;
+.flags-linebrake {
+  letter-spacing: 0px;
   @media (max-width: $bp-mobile) {
-    display: static;
+    display: block;
   }
 }
