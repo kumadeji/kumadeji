@@ -172,6 +172,9 @@ section {
         -webkit-animation: gradient 10s ease infinite;
         -moz-animation: gradient 10s ease infinite;
         animation: gradient 10s ease infinite;
+		@media (max-width: $bp-mobile) {
+		  font-size: 6rem;
+		}
 	}
 	
 	#preloader-text-over {
@@ -326,6 +329,9 @@ section {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 5px;
+	@media (max-width: $bp-mobile) {
+	  text-align: center;
+	}
   }
   &-4 img {
     vertical-align: -2px;
@@ -335,7 +341,8 @@ section {
     text-transform: uppercase;
     letter-spacing: 3px;
 	@media (max-width: $bp-mobile) {
-      font-size: 1.35rem;
+      font-size: 1.2rem;
+	  text-align: center;
 	}
   }
 }
@@ -343,6 +350,9 @@ section {
 .paragraph {
   font-size: 1.6rem;
   color: $black;
+  @media (max-width: $bp-mobile) {
+    text-align: center;
+  }
 }
 
 /*--------------------------

@@ -273,6 +273,12 @@
     -webkit-animation: gradient 10s ease infinite;
     -moz-animation: gradient 10s ease infinite;
     animation: gradient 10s ease infinite;
+	
+	@media (max-width: $bp-mobile) {
+	  font-size: 6rem;
+	  text-align: center;
+	}
+	
 	}
 }
 
