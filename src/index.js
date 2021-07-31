@@ -1,5 +1,25 @@
 import "/sass/main.scss";
 
+//get current scroll position
+var xPosition = window.scrollX || window.pageXOffset || document.body.scrollLeft;
+var yPosition = window.scrollY || window.pageYOffset || document.body.scrollTop;
+
+//disable scrolling
+window.onscroll = function() {
+    window.scrollTo(xPosition, yPosition);
+};
+
+//animate and enable scrolling when animation is completed
+emt.animate({
+    left: "toggle",
+    top: "toggle",
+    width: "toggle",
+    height: "toggle"
+}, 500, function() {
+    //enable scrolling when animation is done
+    window.onscroll = function() {};
+});
+
 // preloader
 const preloaderTL = gsap.timeline();
 preloaderTL.to('#preloader-text-over', {yPercent: -20, opacity: 0, delay: 3})
