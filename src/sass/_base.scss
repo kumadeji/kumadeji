@@ -358,6 +358,12 @@ section {
 /*--------------------------
     button
 ---------------------------*/
+.cta-wrapper {
+  @media (max-width: $bp-mobile) {
+    text-align: center;
+  }
+}
+
 .cta {
   display: inline-grid;
   margin-right: 5px;
@@ -379,6 +385,7 @@ section {
   }
   @media (max-width: $bp-mobile) {
     padding: 1.5rem 2.5rem;
+	margin: 2.5px;
   }
 }
 
