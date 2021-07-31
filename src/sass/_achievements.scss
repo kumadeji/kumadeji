@@ -74,6 +74,9 @@
   @media (max-width: $bp-mobile) {
     font-size: 13px;
   }
+  @media (max-width: $bp-tablet) {
+    font-size: 14px;
+  }
 }
 
 .g-avatar_size_xxl_fix {
@@ -82,16 +85,27 @@
     width: 70px;
     line-height: 70px;
   }
+  @media (max-width: $bp-tablet) {
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+  }
 }
 
 .l-profile-freel__data_fix {
   @media (max-width: $bp-mobile) {
     padding-left: 85px;
   }
+  @media (max-width: $bp-tablet) {
+    font-size: 110px;
+  }
 }
 
 .l-profile-freel__name_fix {
   @media (max-width: $bp-mobile) {
     font-size: 16px;
+  }
+  @media (max-width: $bp-tablet) {
+    font-size: 20px;
   }
 }
