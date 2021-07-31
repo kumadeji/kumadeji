@@ -289,3 +289,10 @@
 .nav-anim .bar3 {
   transform: rotate(45deg) translate(-7px, -8px);
 }
+
+@media (min-width: calc($bp-mobile + 1px)) {
+  .flags-adjust {
+    display: none;
+  }
+}
+
