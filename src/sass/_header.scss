@@ -156,10 +156,12 @@
   position: relative;
   overflow: hidden;
   min-height: 70rem;
-  @media only screen and (max-width: 37.5em) {
+  
+  // @media only screen and (max-width: 37.5em) {
     // phone
-    min-height: 60rem;
-  }
+    // min-height: 60rem;
+  // }
+  
   &::before {
     content: "";
     position: absolute;
