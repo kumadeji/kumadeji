@@ -23,8 +23,8 @@
     &:active {
       outline: none;
     }
-	@media (max-width: $bp-tablet) {
-      filter: opacity(0.06);
+	@media (max-width: $bp-mobile) {
+      filter: opacity(0.4);
 	}
 
     .bar1,
