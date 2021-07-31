@@ -57,6 +57,9 @@
 
 .g-text_size_m {
   font-size: 15px
+  @media (max-width: $bp-mobile) {
+    font-size: 13px;
+  }
 }
 
 .g-text_weight_semibold {
@@ -85,11 +88,15 @@
   width: 90px;
   line-height: 90px;
   font-size: 38px
+  @media (max-width: $bp-mobile) {
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+  }
 }
 
 body {
   position: fixed;
-  /* overflow-y: scroll; */
   width: 100%;
   color: #212121;
   text-align: left;
@@ -114,6 +121,9 @@ body {
 .l-profile-freel__data {
   padding-left: 120px;
   position: relative
+  @media (max-width: $bp-mobile) {
+    padding-left: 85px;
+  }
 }
 
 .l-profile-freel__name {
@@ -126,6 +136,9 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis
+  @media (max-width: $bp-mobile) {
+    font-size: 16px;
+  }
 }
 
 .l-profile-freel__info-item {
