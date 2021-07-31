@@ -1,27 +1,5 @@
 import "/sass/main.scss";
 
-//get window scroll position prior to animation
-//so we can keep this position during animation
-var xPosition = window.scrollX || window.pageXOffset || document.body.scrollLeft;
-var yPosition = window.scrollY || window.pageYOffset || document.body.scrollTop;
-
-//NOTE:restoreTimer needs to be global variable
-//start the restore timer
-restoreTimer = setInterval(function() {
-    window.scrollTo(xPosition, yPosition);
-}, 1);
-
-//animate the element emt
-emt.animate({
-    left: "toggle",
-    top: "toggle",
-    width: "toggle",
-    height: "toggle"
-}, 500, function() {
-    //when animation completes, we stop the timer
-    clearInterval(restoreTimer);
-});
-
 // preloader
 const preloaderTL = gsap.timeline();
 preloaderTL.to('#preloader-text-over', {yPercent: -20, opacity: 0, delay: 3})
