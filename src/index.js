@@ -42,13 +42,12 @@ function enableScroll() {
   window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
 }
 
-alert("before setTimeout");
-
+disableScroll();
+document.body.style.overflow = 'hidden';
 setTimeout(function(){
-        disableScroll();
-   },10000); //delay is in milliseconds 
-
-alert("after setTimeout");
+        enableScroll();
+		document.body.style.overflow = 'visible';
+   },3000); //1000 - 1 секунда 
 
 // preloader
 const preloaderTL = gsap.timeline();
