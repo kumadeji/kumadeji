@@ -94,6 +94,9 @@
       grid-gap: 4rem;
       padding: 4rem;
       color: $white;
+	  @media (max-width: $bp-mobile) {
+	    left: 1rem;
+	  }
 
       &--box {
         margin-bottom: 50px;
