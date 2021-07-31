@@ -298,9 +298,8 @@
   transform: rotate(45deg) translate(-7px, -8px);
 }
 
-@media (min-width: calc($bp-mobile + 1px)) {
-  .flags-adjust {
-    display: none;
+.flags-adjust {
+  @media (min-width: calc($bp-mobile + 1px)) {
+      display: none;
   }
 }
-
