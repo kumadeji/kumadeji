@@ -190,6 +190,9 @@
       // tab-land
       top: 60%;
     }
+	@media (max-width: $bp-mobile) {
+	  right: 10%;
+	}
   }
 }
 
