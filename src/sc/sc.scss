@@ -52,44 +52,44 @@
 }
 .g-text_size_m {
 	font-size: 15px;
-	@media (max-width: $bp-mobile) { font-size: 13px;
+	@media (max-width: $bp-mobile) { font-size: 13px; }
 }
-} {
-	.g-text_weight_semibold {
-		font-weight: 600;
-	}
-	body {
-		position: fixed;
-		width: 100%;
-		color: #212121;
-		text-align: left;
-		background-color: #eee;
-		font: 13px/1.2 Inter, Helvetica, Arial, sans-serif;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-	}
-	.l-profile-freel__name {
-		color: #424242;
-		font-weight: 600;
-		font-size: 24px;
-		margin-top: 5px;
-		margin-bottom: 10px;
-		line-height: 1.2;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		@media (max-width: $bp-mobile) { font-size: 16px;
-	}
-	.l-profile-freel__info-item {
-		color: #000;
-		font-weight: 400;
-		margin-bottom: 8px;
-	}
+{
+.g-text_weight_semibold {
+	font-weight: 600;
+}
+body {
+	position: fixed;
+	width: 100%;
+	color: #212121;
+	text-align: left;
+	background-color: #eee;
+	font: 13px/1.2 Inter, Helvetica, Arial, sans-serif;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+.l-profile-freel__name {
+	color: #424242;
+	font-weight: 600;
+	font-size: 24px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	line-height: 1.2;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	@media (max-width: $bp-mobile) { font-size: 16px; }
+}
+.l-profile-freel__info-item {
+	color: #000;
+	font-weight: 400;
+	margin-bottom: 8px;
+}
 }
 .g-avatar {
 	position: relative;
@@ -114,7 +114,7 @@
 	font-size: 38px;
 	@media (max-width: $bp-mobile) { height: 70px;
 	width: 70px;
-	line-height: 70px;
+	line-height: 70px; }
 }
 .l-profile-freel__avatar {
 	float: left;
@@ -125,5 +125,5 @@
 .l-profile-freel__data {
 	padding-left: 120px;
 	position: relative;
-	@media (max-width: $bp-mobile) { padding-left: 85px;
+	@media (max-width: $bp-mobile) { padding-left: 85px; }
 }
