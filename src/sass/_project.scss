@@ -39,6 +39,9 @@
     a {
       margin: 10px;
       white-space: nowrap;
+	  @media (max-width: $bp-mobile) {
+	    margin: 1px;
+	  }
     }
   }
 

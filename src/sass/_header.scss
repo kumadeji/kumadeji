@@ -71,8 +71,11 @@
       opacity: 0;
     }
 
-    .shadow-sec {
+    .shadow-fix {
       filter: drop-shadow(2px 2px 1px $black);
+	  @media (max-width: $bp-mobile) {
+	    text-align: inherit;
+	  }
     }
 
     &__content {
@@ -105,6 +108,9 @@
               margin-right: 2rem;
               height: 3.5rem;
               filter: brightness(1%);
+			  @media (max-width: $bp-mobile) {
+			    height: 3rem;
+			  }
             }
           }
           &--box:nth-child(2) {
