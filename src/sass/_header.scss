@@ -252,7 +252,7 @@
 }
 
 .name-container {
-  @include flexCenter;
+  // @include flexCenter;
   // padding-top: 20px;
   @media (max-width: $bp-mobile) {
     font-size: 6rem;
