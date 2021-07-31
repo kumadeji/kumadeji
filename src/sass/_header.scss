@@ -24,7 +24,9 @@
       outline: none;
     }
 	@media (max-width: $bp-mobile) {
-      filter: opacity(0.4);
+      filter: opacity(0.5);
+	  width: 5rem;
+	  height: 5rem;
 	}
 
     .bar1,
