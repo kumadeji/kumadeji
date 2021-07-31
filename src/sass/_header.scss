@@ -302,6 +302,6 @@
 
 .flags-adjust {
   @media (min-width: calc($bp-mobile + 1px)) {
-      display: none;
+      content: "";
   }
 }
