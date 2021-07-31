@@ -24,7 +24,8 @@
       outline: none;
     }
 	@media (max-width: $bp-tablet) {
-    filter: opacity(0.06);
+      filter: opacity(0.06);
+	}
 
     .bar1,
     .bar2,
