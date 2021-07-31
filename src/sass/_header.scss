@@ -315,7 +315,8 @@
 }
 
 .flags-adjust {
-  @media (min-width: calc($bp-mobile + 1px)) {
-      content: "";
+  display: none;
+  @media (max-width: $bp-mobile) {
+    display: static;
   }
 }
