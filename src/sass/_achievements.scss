@@ -58,6 +58,13 @@
   }
 }
 
+.second-heading {
+  @media (max-width: $bp-mobile) {
+	font-size: 2rem;
+    text-align: center;
+  }
+}
+
 .test-sc-container {
   @import "../sc/sc.css";
 }
