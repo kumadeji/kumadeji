@@ -52,7 +52,7 @@
 }
 .g-text_size_m {
 	font-size: 15px;
-	@media (max-width: $bp-mobile) { font-size: 13px; }
+	@media (max-width: $bp-mobile) {font-size: 13px;}
 }
 {
 .g-text_weight_semibold {
@@ -83,7 +83,7 @@ body {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	@media (max-width: $bp-mobile) { font-size: 16px; }
+	@media (max-width: $bp-mobile) {font-size: 16px;}
 }
 .l-profile-freel__info-item {
 	color: #000;
@@ -112,9 +112,9 @@ body {
 	width: 90px;
 	line-height: 90px;
 	font-size: 38px;
-	@media (max-width: $bp-mobile) { height: 70px;
+	@media (max-width: $bp-mobile) {height: 70px;
 	width: 70px;
-	line-height: 70px; }
+	line-height: 70px;}
 }
 .l-profile-freel__avatar {
 	float: left;
@@ -125,5 +125,5 @@ body {
 .l-profile-freel__data {
 	padding-left: 120px;
 	position: relative;
-	@media (max-width: $bp-mobile) { padding-left: 85px; }
+	@media (max-width: $bp-mobile) {padding-left: 85px;}
 }
