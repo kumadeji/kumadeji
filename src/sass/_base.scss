@@ -203,16 +203,10 @@ section {
         text-shadow: 0px 15px 15px $shadows;
 	    color: var(--color-white);
 	    
-		// адаптированные
-	    // background: -webkit-linear-gradient(135deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
-        // background: -moz-linear-gradient(135deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
-        // background: linear-gradient(-45deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
+	    background: -webkit-linear-gradient(135deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
+        background: -moz-linear-gradient(135deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
+        background: linear-gradient(-45deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
 	    
-		// новые
-		background: -webkit-linear-gradient(135deg, var(--color-light-green), var(--color-light-red), var(--color-light-blue), var(--color-light-red), var(--color-light-green));
-		background: -moz-linear-gradient(135deg, var(--color-light-green), var(--color-light-red), var(--color-light-blue), var(--color-light-red), var(--color-light-green));
-		background: linear-gradient(-45deg, var(--color-light-green), var(--color-light-red), var(--color-light-blue), var(--color-light-red), var(--color-light-green));
-		
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
