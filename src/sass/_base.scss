@@ -175,6 +175,12 @@ section {
 		@media (max-width: $bp-mobile) {
 		  font-size: 6rem;
 		}
+		@supports (-moz-appearance:none) {
+		  position: relative;
+		  top: 44%;
+		  left: 0;
+		  transform: none;
+		}
 	}
 	
 	#preloader-text-over {
