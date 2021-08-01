@@ -182,7 +182,8 @@
     top: 0;
     right: 0;
     z-index: -1;
-    background: url("../img/svg/home-bg.svg") 90% 0 no-repeat;
+    // background: url("../img/svg/home-bg.svg") 90% 0 no-repeat;
+	background: url("../img/svg/home-bg-2.svg") 90% 0 no-repeat;
     @media (max-width: $bp-tablet) {
       filter: opacity(0.06);
     }
@@ -260,11 +261,20 @@
   --color-gray: #c4c4c4;
   --color-black: #000;
   --color-purple: #8000ff;
+  
+  // исходные
   // --color-light-purple: #cf59e6;
   // --color-light-blue: #6bc5f8;
-  --color-light-green: #09F755;
-  --color-light-yellow: #EFC518;
-  --color-light-red: #F80332;
+  
+  // адаптированные
+  // --color-light-green: #09F755;
+  // --color-light-yellow: #EFC518;
+  // --color-light-red: #F80332;
+  
+  // новые
+  --color-light-green: #78B1B1;
+  --color-light-red: #FF6D6D;
+  --color-light-blue: #748593;
 }
 
 .name-container {
@@ -282,13 +292,20 @@
 	color: var(--color-white);
     position: relative;
 
+    // исходные
     // background: -webkit-linear-gradient(135deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple));
     // background: -moz-linear-gradient(135deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple));
     // background: linear-gradient(-45deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple));
 	
-	background: -webkit-linear-gradient(135deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
-    background: -moz-linear-gradient(135deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
-    background: linear-gradient(-45deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
+    // адаптированные
+	// background: -webkit-linear-gradient(135deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
+    // background: -moz-linear-gradient(135deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
+    // background: linear-gradient(-45deg, var(--color-light-green), var(--color-light-yellow), var(--color-light-red), var(--color-light-yellow), var(--color-light-green));
+	
+    // новые
+	background: -webkit-linear-gradient(135deg, var(--color-light-green), var(--color-light-red), var(--color-light-blue), var(--color-light-red), var(--color-light-green));
+	background: -moz-linear-gradient(135deg, var(--color-light-green), var(--color-light-red), var(--color-light-blue), var(--color-light-red), var(--color-light-green));
+	background: linear-gradient(-45deg, var(--color-light-green), var(--color-light-red), var(--color-light-blue), var(--color-light-red), var(--color-light-green));
 	
     background-clip: text;
     -webkit-background-clip: text;
