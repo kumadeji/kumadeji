@@ -258,31 +258,31 @@ section {
         stroke-width: 1;
         stroke-dasharray: 430;
         stroke-dashoffset: 430;
-        animation: line-anim 2s ease forwards .3s;
+        animation: line-anim 2s ease forwards .3s, gradient 10s ease infinite;
     }
     #preloader-text-main, #preloader-text-over, preloader-text-under path:nth-child(3) {
         stroke-width: 1;
         stroke-dasharray: 413;
         stroke-dashoffset: 413;
-        animation: line-anim 2s ease forwards .6s;
+        animation: line-anim 2s ease forwards .6s, gradient 10s ease infinite;
     }
     #preloader-text-main, #preloader-text-over, preloader-text-under path:nth-child(4) {
         stroke-width: 1;
         stroke-dasharray: 290;
         stroke-dashoffset: 290;
-        animation: line-anim 2s ease forwards .9s;
+        animation: line-anim 2s ease forwards .9s, gradient 10s ease infinite;
     }
     #preloader-text-main, #preloader-text-over, preloader-text-under path:nth-child(5) {
         stroke-width: 1;
         stroke-dasharray: 187;
         stroke-dashoffset: 187;
-        animation: line-anim 2s ease forwards 1.2s;
+        animation: line-anim 2s ease forwards 1.2s, gradient 10s ease infinite;
     }
     #preloader-text-main, #preloader-text-over, preloader-text-under path:nth-child(6) {
         stroke-width: 1;
         stroke-dasharray: 393;
         stroke-dashoffset: 393;
-        animation: line-anim 2s ease forwards 1.5s;
+        animation: line-anim 2s ease forwards 1.5s, gradient 10s ease infinite;
     }
 }
 
