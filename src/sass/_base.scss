@@ -252,7 +252,7 @@ section {
         stroke-width: 1;
         stroke-dasharray: 393.5;
         stroke-dashoffset: 393.5;
-        animation: line-anim 2s ease forwards;
+        animation: line-anim 2s ease forwards, gradient 10s ease infinite;
     }
     #preloader-text-main, #preloader-text-over, preloader-text-under path:nth-child(2) {
         stroke-width: 1;
