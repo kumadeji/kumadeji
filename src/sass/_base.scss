@@ -211,9 +211,9 @@ section {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-size: 400% 400%;
-        -webkit-animation: gradient 10s ease infinite;
-        -moz-animation: gradient 10s ease infinite;
-        animation: gradient 10s ease infinite;
+        // -webkit-animation: gradient 10s ease infinite;
+        // -moz-animation: gradient 10s ease infinite;
+        // animation: gradient 10s ease infinite;
 		@media (max-width: $bp-mobile) {
 		  font-size: 6rem;
 		}
@@ -284,6 +284,20 @@ section {
         stroke-dashoffset: 393;
         animation: line-anim 2s ease forwards 1.5s;
     }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  to {
+    background-position: 0 50%;
+  }
 }
 
 @keyframes line-anim {
