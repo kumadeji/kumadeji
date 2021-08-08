@@ -83,4 +83,13 @@
   @media (max-width: $bp-mobile) {
     width: 90px;
   }
+  @media (max-width: $bp-lowres-tablet) {
+    width: 89px;
+  }
+}
+
+.content-projects {
+  @media (max-width: $bp-lowres-tablet) {
+    font-size: 1.4rem;
+  }
 }
