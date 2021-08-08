@@ -10,7 +10,7 @@
     margin-top: 6rem;
     margin-bottom: 3rem;
 
-    @include bgImg("/img/png/map.png");
+    @include bgImg("/img/png/map-bg.png");
     background-size: cover;
   }
 
@@ -84,7 +84,7 @@
     }
 
     .img-container {
-      @include bgImg("/img/png/me.png");
+      @include bgImg("/img/png/misc-me.png");
       height: 16rem;
       width: 16rem;
       border: 2px solid $white;
