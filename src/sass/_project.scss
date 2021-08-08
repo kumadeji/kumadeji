@@ -84,13 +84,3 @@
     width: 90px;
   }
 }
-
-@keyframes colorChanger {
-    0%{fill:#ffffff}
-    50%{fill:#ffe1f1}
-    100%{fill: #ffffff}
-}
-
-.locstories {
-    animation: colorChanger 5s infinite;
-}
