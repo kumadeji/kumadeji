@@ -93,3 +93,9 @@
     font-size: 1.4rem;
   }
 }
+
+.locstories-width {
+  @media (max-width: $bp-mobile) {
+    width: 100%;
+  }
+}
