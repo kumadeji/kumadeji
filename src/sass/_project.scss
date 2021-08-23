@@ -60,14 +60,14 @@
     }
 
     &-title {
-      h3 {
-        max-width: 200px;
-      }
-      h3.longy {
-        @media (max-width: $bp-mobile) {
-          max-width: 140px;
-        }
-      }
+      // h3 {
+      //   max-width: 400px;
+      // }
+      // h3.longy {
+      //   @media (max-width: $bp-mobile) {
+      //     max-width: 140px;
+      //   }
+      // }
 
       display: flex;
       justify-content: space-between;
