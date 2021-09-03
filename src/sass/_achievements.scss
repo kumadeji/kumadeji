@@ -100,12 +100,18 @@
     &:after {
       content: "";
       position: absolute;
-      width: 101%;
+      width: 100.95%;
       height: 101%;
       top: 1rem;
       right: 0;
       z-index: -1;
       outline: 1px solid #00000030;
+	  @media (max-width: $bp-mobile) {
+        width: 101.4%;
+      }
+	  @media (max-width: 539px) {
+        width: 103%;
+      }
     }
 
     &:nth-child(1) {
