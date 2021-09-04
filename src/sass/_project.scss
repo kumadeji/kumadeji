@@ -90,7 +90,9 @@
 }
 
 .content-projects {
-  padding-left: 20px;
+  ul {
+    padding-left: 20px;
+  }
   @media (max-width: $bp-lowres-tablet) {
     font-size: 1.4rem;
   }
