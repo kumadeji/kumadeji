@@ -159,6 +159,10 @@ details[open] summary ~ * {
   background-color: #eee;
 }
 
+.smartcat-button {
+  padding: 5px;
+  filter: brightness(0);
+}
 
 .g-text_size_m_fix {
   @media (max-width: $bp-mobile) {
