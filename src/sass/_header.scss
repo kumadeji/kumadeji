@@ -320,3 +320,51 @@
     display: block;
   }
 }
+
+.headtext-first {
+  margin: -10px 0px 5px 0;
+  font-size: 1.34rem;
+  text-transform: uppercase;
+  color: #ef9218";
+}
+
+.headtext-second {
+  margin: 15px 0px 5px 0;
+  font-size: 1.545rem;
+}
+
+.cv-link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #000;
+  
+  &-jp {
+    font-weight: bold;
+  }
+}
+
+.cv-img {
+  position: inherit;
+  border-color: #0000004f;
+  
+  &-ru {
+    margin-top: -25%;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  &-us {
+    margin-top: -80%;
+	margin-left: -6px;
+	margin-right: auto;
+  }
+  &-gb {
+    margin-top: -80%;
+	margin-left: auto;
+	margin-right: -6px;
+  }
+  &-jp {
+    margin-top: -58%;
+	margin-left: auto;
+	margin-right: auto;
+  }
+}
