@@ -123,7 +123,7 @@ const timer = 6000;
 
 function getQuotes() {
   fetch(
-    "../quotes.json"
+    "./quotes.json"
   )
     .then((response) => response.json())
     .then((data) => setInterval(() => shuffleQuotes(data.data), timer));
