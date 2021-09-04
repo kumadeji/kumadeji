@@ -1,0 +1,85 @@
+{
+  "name": "100 Funny Programmer Quotes",
+  "credits_url": "https://medium.com/better-programming/101-funny-programmer-quotes-76c7f335b92d",
+  "description": "Collection of the funniest programmings quotes",
+  "updated_at": "05 Dec 2020",
+  "private": false,
+  "data": [
+    {
+      "quote": "Programmer: A machine that turns coffee into code.",
+      "source": "https://devrant.com/rants/343239/definition-of-programmer-a-machine-that-turns-coffee-into-code"
+    },    
+    {
+      "quote": "When I wrote this code, only God and I understood what I did. Now only God knows.",
+      "source": "https://www.reddit.com/r/ProgrammerHumor/comments/j7t8ju/just_need_to_replace_that_face_with_mine_collected/"
+    },
+    {
+      "quote": "A son asked his father (a programmer) why the sun rises in the east, and sets in the west. His response? It works, don’t touch!",
+      "source": "https://www.reddit.com/r/Jokes/comments/8zfcs7/programmers_son_asks_his_father_dad_why_do_the/"
+    },
+    {
+      "quote": "Copy-and-Paste was programmed by programmers for programmers actually.",
+      "source": "https://www.reddit.com/r/ProgrammerHumor/comments/j7usab/copypaste_was_programmed_by_programmers_for/"
+    },
+    {
+      "quote": "Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live.",
+      "source": "https://stackoverflow.com/questions/876089/who-wrote-this-programing-saying-always-code-as-if-the-guy-who-ends-up-maintai"
+    },
+    {
+      "quote": "Algorithm: Word used by programmers when they don’t want to explain what they did.",
+      "source": "https://www.amazon.com/Algorithm-Word-Used-Programmers-Explain/dp/1081977302"
+    },
+    {
+      "quote": "Software and cathedrals are much the same — first we build them, then we pray.",
+      "source": "https://simonecarletti.com/quotes/52a5eb7c0d52b0753b00000a/"
+    },
+    {
+      "quote": "If debugging is the process of removing bugs, then programming must be the process of putting them in.",
+      "source": "https://www.reddit.com/r/ProgrammerHumor/comments/85jsp6/if_debugging_is_the_process_of_removing_software/"
+    },
+    {
+      "quote": "One man’s crappy software is another man’s full-time job.",
+      "source": "https://devrant.com/rants/33509/one-man-s-crappy-software-is-another-man-s-full-time-job-jessica-gaston"
+    },
+    {
+      "quote": "A good programmer is someone who always looks both ways before crossing a one-way street.",
+      "source": "https://devrant.com/rants/1008388/a-good-programmer-is-someone-who-always-looks-both-ways-before-crossing-a-one-wa"
+    },
+    {
+      "quote": "Deleted code is debugged code.",
+      "source": "https://devrant.com/rants/1410556/deleted-code-is-debugged-code-jeff-sickel"
+    },
+    {
+      "quote": "It’s not a bug — it’s an undocumented feature.",
+      "source": "https://www.amazon.com/Its-Not-Undocumented-Feature-Shirt/dp/B07L92D2DT"
+    },
+    {
+      "quote": "It works on my machine.",
+      "source": "https://www.reddit.com/r/ProgrammerHumor/comments/70we66/it_works_on_my_machine/"
+    },
+    {
+      "quote": "There are only two kinds of programming languages out there. The ones people complain about and the ones no one uses.",
+      "source": "https://www.goodreads.com/quotes/226225-there-are-only-two-kinds-of-languages-the-ones-people"
+    },
+    {
+      "quote": "Programming made the impossible possible. You can have a null object and a constant variable.",
+      "source": "https://www.reddit.com/r/ProgrammerHumor/comments/j7xagj/programming_made_the_impossible_possible_you_have/"
+    },
+    {
+      "quote": "A SQL query goes into a bar, walks up to two tables, and asks, ‘Can I join you?’",
+      "source": "https://www.reddit.com/r/programming/comments/7v978/a_sql_query_walks_into_a_bar_and_sees_two_tables/"
+    },
+    {
+      "quote": "To understand what recursion is, you must first understand recursion.",
+      "source": "https://medium.com/@leog7one/to-understand-recursion-you-must-first-understand-recursion-recursion-explained-c574245cf788"
+    },
+    {
+      "quote": "There’s no place like 127.0.0.1.",
+      "source": "https://medium.com/@hackersleaguebooks/theres-no-place-like-127-0-0-1-explained-1e6af9368e32"
+    },
+    {
+      "quote": "There is no Ctrl-Z in life.",
+      "source": "https://www.astroawani.com/gaya-hidup/there-is-no-ctrlz-in-life-64116"
+    }
+  ]
+}
