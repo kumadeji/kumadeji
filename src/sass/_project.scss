@@ -73,6 +73,10 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
+	  
+	  @media (max-width: $bp-mobile) {
+	    justify-content: center;
+	  }
     }
   }
 }
