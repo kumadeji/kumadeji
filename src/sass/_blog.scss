@@ -12,7 +12,7 @@
 
   &-box {
     padding: 2rem;
-    height: 35rem;
+    // height: 35rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,9 +24,9 @@
 	background-size: cover;
 	color: $white;
 	
-	@media (max-width: $bp-mobile) {
-	  height: 45rem;
-    }
+	// @media (max-width: $bp-mobile) {
+	//   height: 45rem;
+    // }
 	
   }
 
@@ -87,5 +87,5 @@
 }
 
 .locstories-text-second {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
