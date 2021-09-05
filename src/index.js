@@ -188,7 +188,7 @@ function setWidthFix() {
   var certs = document.getElementById("width-read");
   var fix1 = document.getElementById("width-write-1");
   var fix2 = document.getElementById("width-write-2");
-  var sc = document.getElementById("smartcat-width-write");
+  var smartcat = document.getElementById("smartcat-width-write");
   
   var leftPadding = window.getComputedStyle(certs, null).getPropertyValue('padding-left');
   var width = window.getComputedStyle(certs, null).getPropertyValue('width');
@@ -207,8 +207,12 @@ function setWidthFix() {
 	fix2.style.width = "auto";
 	fix2.style.padding = "2rem";
   }
-  sc.style.width = width;
-  sc.style.padding = leftPadding;
+  
+  var leftPadding2 = window.getComputedStyle(fix1, null).getPropertyValue('padding-left');
+  var width2 = window.getComputedStyle(fix1, null).getPropertyValue('width');
+  
+  smartcat.style.width = width2;
+  smartcat.style.padding = leftPadding2;
 }
 setWidthFix();
 window.addEventListener('resize', setWidthFix);
