@@ -183,6 +183,7 @@ completedProjectText.innerHTML = declOfNum(completedProjectCount.innerHTML, ['п
 }
 getSmartCat();
 
+// фикс ширины и паддинга у последних из трех блоков в таблицах на планшете
 function setWidthFix() {
   var certs = document.getElementById("width-read");
   var fix1 = document.getElementById("width-write-1");
@@ -203,8 +204,9 @@ function setWidthFix() {
     alert('>821');
   }
 }
-window.onload = setWidthFix();
-window.onresize = setWidthFix();
+setWidthFix();
+window.addEventListener('resize', setWidthFix);
+
 
 //scroll anchor links fixed
 let switchView = function (hash = location.hash, adjust = 350) {
