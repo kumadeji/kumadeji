@@ -185,20 +185,26 @@ getSmartCat();
 
 function setWidthFix() {
   var certs = document.getElementById("width-read");
-  var fix = document.getElementById("width-write");
+  var fix1 = document.getElementById("width-write-1");
+  var fix2 = document.getElementById("width-write-2");
+  
   var leftPadding = window.getComputedStyle(certs, null).getPropertyValue('padding-left');
   var width = window.getComputedStyle(certs, null).getPropertyValue('width');
+  
   var windowwidth = window.innerWidth;
   
   if (windowwidth < 821) {
-    fix.style.width = width;
-	fix.style.padding = leftPadding;
+    fix1.style.width = width;
+	fix1.style.padding = leftPadding;
+	fix2.style.width = width;
+	fix2.style.padding = leftPadding;
   }
   else {
     alert('>821');
   }
 }
-setWidthFix();
+window.onload = setWidthFix();
+window.onresize = setWidthFix();
 
 //scroll anchor links fixed
 let switchView = function (hash = location.hash, adjust = 350) {
