@@ -188,7 +188,6 @@ function setWidthFix() {
   var certs = document.getElementById("width-read");
   var fix1 = document.getElementById("width-write-1");
   var fix2 = document.getElementById("width-write-2");
-  var smartcat = document.getElementById("smartcat-width-write");
   
   var leftPadding = window.getComputedStyle(certs, null).getPropertyValue('padding-left');
   var width = window.getComputedStyle(certs, null).getPropertyValue('width');
@@ -208,6 +207,7 @@ function setWidthFix() {
 	fix2.style.padding = "2rem";
   }
   
+  var smartcat = document.getElementById("smartcat-width-write");
   var source = document.getElementById("width-read-2");
   var leftPadding2 = window.getComputedStyle(source, null).getPropertyValue('padding-left');
   var width2 = window.getComputedStyle(source, null).getPropertyValue('width');
