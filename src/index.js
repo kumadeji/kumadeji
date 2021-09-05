@@ -208,8 +208,9 @@ function setWidthFix() {
 	fix2.style.padding = "2rem";
   }
   
-  var leftPadding2 = window.getComputedStyle(fix1, null).getPropertyValue('padding-left');
-  var width2 = window.getComputedStyle(fix1, null).getPropertyValue('width');
+  var source = document.getElementById("width-read-2");
+  var leftPadding2 = window.getComputedStyle(source, null).getPropertyValue('padding-left');
+  var width2 = window.getComputedStyle(source, null).getPropertyValue('width');
   
   smartcat.style.width = width2;
   smartcat.style.padding = leftPadding2;
