@@ -4,13 +4,13 @@ import "/sass/main.scss";
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
-function preventDefaults(e) {
+function preventDefaultA(e) {
   e.preventDefault();
 }
 
 function preventDefaultForScrollKeys(e) {
   if (keys[e.keyCode]) {
-    preventDefaults(e);
+    preventDefaultA(e);
     return false;
   }
 }
@@ -29,17 +29,17 @@ var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewh
 // call this to Disable
 function disableScroll() {
   window.onunload = function(){ window.scrollTo(0,0); } // сброс скролла при перезагрузке
-  window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-  window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+  window.addEventListener('DOMMouseScroll', preventDefaultA, false); // older FF
+  window.addEventListener(wheelEvent, preventDefaultA, wheelOpt); // modern desktop
+  window.addEventListener('touchmove', preventDefaultA, wheelOpt); // mobile
   window.addEventListener('keydown', preventDefaultForScrollKeys, false);
 }
 
 // call this to Enable
 function enableScroll() {
-  window.removeEventListener('DOMMouseScroll', preventDefault, false);
-  window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
-  window.removeEventListener('touchmove', preventDefault, wheelOpt);
+  window.removeEventListener('DOMMouseScroll', preventDefaultA, false);
+  window.removeEventListener(wheelEvent, preventDefaultA, wheelOpt); 
+  window.removeEventListener('touchmove', preventDefaultA, wheelOpt);
   window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
 }
 
