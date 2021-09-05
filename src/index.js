@@ -225,7 +225,7 @@ let switchView = function (hash = location.hash, adjust = 350) {
     if (mobileView.matches) adjust = 250;
     let elem = document.querySelector(hash);
     let top = elem.offsetTop;
-    window.scrollTo(0, top);
+    window.scrollTo(0, top - adjust);
   } catch (DOMException) {
     location.hash = "";
   }
