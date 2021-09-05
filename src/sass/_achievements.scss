@@ -164,42 +164,111 @@ details[open] summary ~ * {
   filter: brightness(0);
 }
 
-.g-text_size_m_fix {
-  @media (max-width: $bp-mobile) {
+@font-face {
+  font-family: Inter;
+  src: url(../sc/fonts/Inter-Regular.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../sc/fonts/Inter-SemiBold.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 600;
+}
+
+.g-icon {
+  line-height: 1;
+  display: inline-block;
+  vertical-align: text-bottom;
+  font-size: 16px;
+  height: 16px;
+  position: relative;
+  color: #bdbdbd;
+}
+
+.g-text {
+  font-size: 15px;
+  font-weight: 600;
+  
+  @media (max-width: 821px) {
     font-size: 13px;
   }
-  @media (max-width: $bp-tablet) {
+  @media (max-width: 1091px) {
     font-size: 14px;
   }
 }
 
-.g-avatar_size_xxl_fix {
-  @media (max-width: $bp-mobile) {
+.g-avatar {
+  position: relative;
+  border-radius: 50%;
+  background-color: #e7eaeb;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  
+  height: 90px;
+  width: 90px;
+  line-height: 90px;
+  font-size: 38px;
+  
+  @media (max-width: 821px) {
     height: 70px;
     width: 70px;
     line-height: 70px;
   }
-  @media (max-width: $bp-tablet) {
+  @media (max-width: 1091px) {
     height: 80px;
     width: 80px;
     line-height: 80px;
   }
 }
 
-.l-profile-freel__data_fix {
-  @media (max-width: $bp-mobile) {
+.l-profile-freel__avatar {
+  float: left;
+  position: relative;
+  z-index: 1;
+  margin: 5px;
+}
+
+.l-profile-freel__data {
+  padding-left: 120px;
+  position: relative;
+  
+  @media (max-width: 821px) {
     padding-left: 85px;
   }
-  @media (max-width: $bp-tablet) {
+  @media (max-width: 1091px) {
     font-size: 110px;
   }
 }
 
-.l-profile-freel__name_fix {
-  @media (max-width: $bp-mobile) {
+.l-profile-freel__name {
+  color: #424242;
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  @media (max-width: 821px) {
     font-size: 16px;
   }
-  @media (max-width: $bp-tablet) {
+  @media (max-width: 1091px) {
     font-size: 20px;
   }
+}
+
+.l-profile-freel__info-item {
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 8px;
 }
