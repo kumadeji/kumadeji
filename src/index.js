@@ -183,6 +183,22 @@ completedProjectText.innerHTML = declOfNum(completedProjectCount.innerHTML, ['п
 }
 getSmartCat();
 
+function setWidthFix() {
+  var certs = document.getElementById("width-read");
+  var fix = document.getElementById("width-write");
+  var leftPadding = window.getComputedStyle(certs, null).getPropertyValue('padding-left');
+  var width = window.getComputedStyle(certs, null).getPropertyValue('width');
+  
+  if (windowWidth < 821) {
+    fix.style.width = width;
+	fix.style.padding = leftPadding;
+  }
+  else {
+    alert('>821');
+  }
+}
+setWidthFix();
+
 //scroll anchor links fixed
 let switchView = function (hash = location.hash, adjust = 350) {
   try {
