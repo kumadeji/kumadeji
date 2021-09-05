@@ -218,33 +218,33 @@ function setWidthFix() {
 setWidthFix();
 window.addEventListener('resize', setWidthFix);
 
-//scroll anchor links fixed
-let switchView = function (hash = location.hash, adjust = 700) {
-  try {
-    let mobileView = window.matchMedia("(max-width: 426px)");
-    if (mobileView.matches) adjust = 250;
-    let elem = document.querySelector(hash);
-    let top = elem.offsetTop;
-    window.scrollTo(0, top - adjust);
-  } catch (DOMException) {
-    location.hash = "";
-  }
-};
-
-document.addEventListener("DOMContentLoaded", () => {
-  switchView();
-});
-window.onhashchange = () => {
-  switchView();
-};
-
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.onclick = (e) => {
-    let target = e.target;
-    e.preventDefault();
-    switchView(target.attributes.href.value);
-  };
-});
+// //scroll anchor links fixed
+// let switchView = function (hash = location.hash, adjust = 350) {
+//   try {
+//     let mobileView = window.matchMedia("(max-width: 426px)");
+//     if (mobileView.matches) adjust = 250;
+//     let elem = document.querySelector(hash);
+//     let top = elem.offsetTop;
+//     window.scrollTo(0, top - adjust);
+//   } catch (DOMException) {
+//     location.hash = "";
+//   }
+// };
+// 
+// document.addEventListener("DOMContentLoaded", () => {
+//   switchView();
+// });
+// window.onhashchange = () => {
+//   switchView();
+// };
+// 
+// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+//   anchor.onclick = (e) => {
+//     let target = e.target;
+//     e.preventDefault();
+//     switchView(target.attributes.href.value);
+//   };
+// });
 
 // мусор в консоль
 const message =
