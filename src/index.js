@@ -200,13 +200,7 @@ function setWidthFix() {
 	fix2.style.width = width;
 	fix2.style.padding = leftPadding;
   }
-  else if (windowwidth > 820) {
-    fix1.style.width = "auto";
-	fix1.style.padding = "2rem";
-	fix2.style.width = "auto";
-	fix2.style.padding = "2rem";
-  }
-  else if (windowwidth < 539) {
+  else {
     fix1.style.width = "auto";
 	fix1.style.padding = "2rem";
 	fix2.style.width = "auto";
