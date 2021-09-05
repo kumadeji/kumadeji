@@ -48,7 +48,7 @@ document.body.style.overflow = 'hidden';
 setTimeout(function(){
         enableScroll();
 		document.body.style.overflow = 'visible';
-   },5000); //1000 - 1 секунда 
+   },5500); //1000 - 1 секунда 
 
 // preloader
 const preloaderTL = gsap.timeline();
@@ -225,7 +225,7 @@ let switchView = function (hash = location.hash, adjust = 350) {
     if (mobileView.matches) adjust = 250;
     let elem = document.querySelector(hash);
     let top = elem.offsetTop;
-    window.scrollTo(0, top - adjust);
+    window.scrollTo(0, top);
   } catch (DOMException) {
     location.hash = "";
   }
