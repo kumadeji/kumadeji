@@ -219,7 +219,7 @@ setWidthFix();
 window.addEventListener('resize', setWidthFix);
 
 //scroll anchor links fixed
-let switchView = function (hash = location.hash, adjust = 350) {
+let switchView = function (hash = location.hash, adjust = 700) {
   try {
     let mobileView = window.matchMedia("(max-width: 426px)");
     if (mobileView.matches) adjust = 250;
