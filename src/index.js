@@ -189,7 +189,7 @@ function setWidthFix() {
   var leftPadding = window.getComputedStyle(certs, null).getPropertyValue('padding-left');
   var width = window.getComputedStyle(certs, null).getPropertyValue('width');
   
-  if (windowWidth < 821) {
+  if ($(window).width() < 821) {
     fix.style.width = width;
 	fix.style.padding = leftPadding;
   }
