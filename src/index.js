@@ -183,7 +183,7 @@ completedProjectText.innerHTML = declOfNum(completedProjectCount.innerHTML, ['п
 }
 getSmartCat();
 
-// фикс ширины и паддинга у последних из трех блоков в таблицах на планшете
+// фикс ширины и паддинга у последних из трех блоков в таблицах на планшетах
 function setWidthFix() {
   var certs = document.getElementById("width-read");
   var fix1 = document.getElementById("width-write-1");
@@ -194,19 +194,21 @@ function setWidthFix() {
   
   var windowwidth = window.innerWidth;
   
-  if (windowwidth < 821) {
+  if ((windowwidth > 538) && (windowwidth < 821)) {
     fix1.style.width = width;
 	fix1.style.padding = leftPadding;
 	fix2.style.width = width;
 	fix2.style.padding = leftPadding;
   }
-  else {
-    alert('>821');
+  else if (windowwidth > 821) {
+    fix1.style.width = "auto";
+	fix1.style.padding = "2rem";
+	fix2.style.width = "auto";
+	fix2.style.padding = "2rem";
   }
 }
 setWidthFix();
 window.addEventListener('resize', setWidthFix);
-
 
 //scroll anchor links fixed
 let switchView = function (hash = location.hash, adjust = 350) {
