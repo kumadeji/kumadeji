@@ -151,6 +151,9 @@
   font-weight: 400;
   color: #756c6c;
   text-align: right;
+  @media (max-width: $bp-mobile) {
+	text-align: center;
+  }
 }
 
 details[open] summary ~ * {

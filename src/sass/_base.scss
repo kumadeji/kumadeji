@@ -378,7 +378,7 @@ section {
 /*--------------------------
     button
 ---------------------------*/
-.cta-wrapper {
+.text-center {
   @media (max-width: $bp-mobile) {
     text-align: center;
   }
@@ -532,4 +532,10 @@ section {
 .fade {
   opacity: 1;
   transition: opacity 300ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.icos-container {
+  @media (max-width: $bp-mobile) {
+    align-self: center;
+  }
 }
