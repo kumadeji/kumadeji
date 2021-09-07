@@ -120,12 +120,12 @@
 
 .m-l {
   @media (min-width: $bp-fhd) {
-    margin-left: -10%;
-  }
-  @media (min-width: $bp-2k) {
     margin-left: -15%;
   }
-  @media (min-width: $bp-4k) {
+  @media (min-width: $bp-2k) {
     margin-left: -20%;
+  }
+  @media (min-width: $bp-4k) {
+    margin-left: -25%;
   }
 }
