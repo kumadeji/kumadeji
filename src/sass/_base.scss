@@ -540,5 +540,6 @@ section {
 .icos-container {
   @media (max-width: $bp-mobile) {
     align-self: center;
+	text-align: center;
   }
 }
