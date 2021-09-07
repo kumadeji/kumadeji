@@ -119,6 +119,12 @@
 }
 
 .m-l {
+  @media (min-width: 1360px) {
+    margin-left: -5%;
+  }
+  @media (min-width: 1536px) {
+    margin-left: -10%;
+  }
   @media (min-width: $bp-fhd) {
     margin-left: -15%;
   }
