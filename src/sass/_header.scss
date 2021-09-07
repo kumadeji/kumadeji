@@ -186,6 +186,9 @@
     @media (max-width: $bp-tablet) {
       filter: opacity(0.06);
     }
+	@media (min-width: $bp-4k) {
+	  background: whitesmoke;
+	}
   }
 
   @media only screen and (max-width: 56.25em) {
