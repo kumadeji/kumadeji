@@ -92,6 +92,9 @@
   @media (max-width: $bp-lowres-tablet) {
     width: 89px;
   }
+  @media (min-width: 539px) and (max-width: 558px) {
+    width: 84px;
+  }
 }
 
 .content-projects {
