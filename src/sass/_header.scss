@@ -210,6 +210,12 @@
 	  left: 5%;
 	  right: 5%;
 	}
+	@media (min-width: $bp-2k) {
+	  left: 17.5%;
+	}
+	@media (min-width: $bp-4k) {
+	  left: 35%;
+	}
   }
 }
 

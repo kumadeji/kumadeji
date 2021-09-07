@@ -6,6 +6,10 @@
     padding-left: 10%;
     padding-right: 10%;
   }
+  @media (min-width: $bp-4k) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
   
   &-box__wrapper {
     display: grid;

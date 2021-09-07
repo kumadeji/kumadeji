@@ -6,6 +6,10 @@
     padding-left: 10%;
     padding-right: 10%;
   }
+  @media (min-width: $bp-4k) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 
   a {
     color: $black;
@@ -86,6 +90,10 @@
   @media (min-width: $bp-2k) {
     padding-left: 10%;
     padding-right: 10%;
+  }
+  @media (min-width: $bp-4k) {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 
   a {
