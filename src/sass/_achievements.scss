@@ -1,6 +1,11 @@
 .achievements {
   grid-column: 2/14;
   padding: 6rem;
+  
+  @media (min-width: $bp-2k) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 
   a {
     color: $black;
@@ -77,6 +82,11 @@
 .courses {
   grid-column: 2/14;
   padding: 6rem;
+  
+  @media (min-width: $bp-2k) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 
   a {
     color: $black;

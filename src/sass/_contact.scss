@@ -1,6 +1,11 @@
 .contact {
   grid-column: 2/14;
   padding: 6rem;
+  
+  @media (min-width: $bp-2k) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 
   &-box__wrapper {
     display: grid;
