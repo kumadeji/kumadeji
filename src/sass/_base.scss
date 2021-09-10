@@ -274,6 +274,9 @@ section {
 		  @media (min-width: 1400px) {
 		    top: 56.5% !important;
 		  }
+		  @media (min-width: $bp-4k) {
+		    top: 54.5% !important;
+		  }
 		}
 	}
 	
