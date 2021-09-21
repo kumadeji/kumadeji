@@ -40,7 +40,7 @@
       // font-size: 1.8rem;
       font-size: 1.6rem;
       li {
-        margin-bottom: 0.6rem;
+        margin-bottom: .6rem;
       }
     }
 
@@ -127,14 +127,14 @@
       // font-size: 1.6rem;
 	  margin-top: 1rem;
       li {
-        // margin-bottom: 0.6rem;
-		margin-top: 0.6rem;
+        // margin-bottom: .6rem;
+		margin-top: .6rem;
       }
 	  img {
-		margin-right: 0.5rem;
-		max-width: 1.75rem;
-		width: auto;
-		height: auto;
+		margin-right: .5rem;
+		width: 16px;
+		height: 10px;
+		border: 1px solid rgba(0,0,0,.31);
 	  }
 	  a {
 		text-decoration: underline;
