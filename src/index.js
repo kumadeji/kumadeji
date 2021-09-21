@@ -48,7 +48,7 @@ document.body.style.overflow = 'hidden';
 setTimeout(function(){
         enableScroll();
 		document.body.style.overflow = 'visible';
-   },5500); //1000 - 1 секунда 
+   },6500); //1000 - 1 секунда 
 
 // preloader
 const preloaderTL = gsap.timeline();
