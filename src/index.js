@@ -55,6 +55,7 @@ const preloaderTL = gsap.timeline();
 preloaderTL.to('#preloader-text-over', {yPercent: -20, opacity: 0, delay: 4})
 preloaderTL.to('#preloader-text-main', {yPercent: -20, opacity: 0, delay: 0})
 preloaderTL.to('#preloader-text-under', {yPercent: -20, opacity: 0, delay: 0})
+preloaderTL.to('#preloader-text-under-2', {yPercent: -20, opacity: 0, delay: 0})
 preloaderTL.to('.preloader', {transform: 'scaleY(0)', transformOrigin: 'top', delay: 0})
 
 // custom cursor
