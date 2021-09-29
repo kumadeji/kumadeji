@@ -168,7 +168,8 @@ function declOfNum(number, words) {
 }
 
 function getSmartCat() {
-  fetch("https://jsonp.afeld.me/?callback=&url=https%3A%2F%2Fru.smartcat.com%2Fproxycat%2Fapi%2Ffreelancers%2Fprofile%2Fernest-bagretsov")
+  // fetch("https://jsonp.afeld.me/?callback=&url=https%3A%2F%2Fru.smartcat.com%2Fproxycat%2Fapi%2Ffreelancers%2Fprofile%2Fernest-bagretsov")
+  fetch("https://norigin.herokuapp.com/?url=https://ru.smartcat.com/proxycat/api/freelancers/profile/ernest-bagretsov")
   .then((response) => {
     return response.json();
   })
