@@ -1,0 +1,14 @@
+{
+    "name": "Эрнест Багрецов",
+    "short_name": "Эрнест Багрецов",
+    "icons": [
+        {
+            "src": "/favicon-120x120.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ef9218",
+    "background_color": "#ef9218",
+    "display": "standalone"
+}
