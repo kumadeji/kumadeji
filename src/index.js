@@ -257,11 +257,11 @@ window.onscroll = function() {
   var yepsoffset = document.getElementsByTagName("html")[0].getAttribute("style");
   var navbutton = document.getElementsByClassName("nav-icon");
   
-  if (yepsoffset == '--yeps-top-height-offset:0px; --yeps-top-height:70px;') {
-	navbutton.style.marginTop = '7.5rem';
+  if (yepsoffset == "--yeps-top-height-offset:0px; --yeps-top-height:70px;") {
+	navbutton.style.marginTop = "7.5rem";
   }
   else {
-	navbutton.style.marginTop = 'none';
+	navbutton.style.marginTop = "none";
   }
 };
 
