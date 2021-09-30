@@ -254,7 +254,7 @@ var yepselmnt = yepsiframe.contentWindow.document.getElementsByClassName("yeps-l
 var yepsoffset = document.getElementsByTagName("html")[0].getAttribute("style");
 
 window.onload = function () {
-  document.body.style.opacity='1'; // перенесено из html - отображение прелоадера
+  document.body.style.opacity = "1"; // перенесено из html - отображение прелоадера
   yepselmnt.style.display = "none"; // yeps - лого
 };
 
