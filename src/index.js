@@ -253,8 +253,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 window.onload = function () {
   document.body.style.opacity = "1"; // перенесено из html - отображение прелоадера
 
-  var YepsFrame = document.querySelector('[class^="yeps-frame-"]');
-  var YepsElement = YepsFrame.contentWindow.document.getElementsByClassName("yeps-logo")[0];
+  var YepsFrame = document.getElementsByTagName('iframe')[0];
+  var YepsDoc = YepsFrame.contentDocument || iframe.contentWindow.document;
+  var YepsElement = YepsDoc.getElementsByClassName("yeps-logo")[0];
 
   YepsElement.style.display = "none";
 };
