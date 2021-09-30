@@ -257,14 +257,14 @@ window.onscroll = function() {
   var iframe = document.getElementsByTagName('iframe')[0];
   var iframeDoc = iframe.contentWindow.document;
   
-  var yepsoffset = document.getElementsByTagName("html")[0].getAttribute("style");
-  var navbutton = document.getElementsByClassName("nav-icon");
+  var yepsOffset = document.getElementsByTagName("html")[0].getAttribute("style");
+  var navButton = document.getElementsByClassName("nav-icon");
   
-  if ((iframeDoc.readyState == 'complete') && (yepsoffset == '--yeps-top-height-offset:0px; --yeps-top-height:70px;')) {
-	navbutton[0].style.marginTop = "7.5rem";
+  if ((iframeDoc.readyState == 'complete') && (yepsOffset == '--yeps-top-height-offset:0px; --yeps-top-height:70px;')) {
+	navButton[0].style.marginTop = "7.5rem";
   }
-  else {
-	navbutton[0].style.marginTop = "none";
+  if ((iframeDoc.readyState == 'complete') && (yepsOffset == '--yeps-top-height-offset:-70px; --yeps-top-height:70px;')) {
+	navButton[0].style.marginTop = "none";
   }
 };
 
