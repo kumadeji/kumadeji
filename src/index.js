@@ -254,7 +254,7 @@ var yepselmnt = yepsiframe.contentWindow.document.getElementsByClassName("yeps-l
 var yepsoffset = document.getElementsByTagName("html")[0].getAttribute("style");
 
 window.onload = function () {
-  document.body.style.opacity = '1'; // перенесено из html - отображение прелоадера
+  document.body.style.opacity = "1"; // перенесено из html - отображение прелоадера
   yepselmnt.style.display = "none"; // yeps - лого
 };
 
@@ -262,10 +262,10 @@ window.onscroll = function() {
   var navbutton = document.getElementsByClassName("nav-icon");
   
   if (yepsoffset == "--yeps-top-height-offset:0px; --yeps-top-height:70px;") {
-	navbutton.style.top = '10rem';
+	navbutton.style.margin-top = "7.5rem";
   }
   else {
-	navbutton.style.top = '2.5rem';
+	navbutton.style.margin-top = "none";
   }
 };
 
