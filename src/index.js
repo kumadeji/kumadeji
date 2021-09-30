@@ -250,11 +250,16 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 function testshit() {
-  var teststyle = window.getComputedStyle(document.querySelector('[class^="yeps-frame-"]')).style;
-  console.log(teststyle);
+  //var teststyle = window.getComputedStyle(document.querySelector('[class^="yeps-frame-"]')).style;
+  var iframe = document.querySelector('[class^="yeps-frame-"]');
+  var elmnt = iframe.contentWindow.document.getElementsByClassName("yeps-logo")[0];
+  elmnt.style.display = "none";
 }
 testshit();
 //transform: translate3d(0px, -70px, 0px)
+
+
+
 
 // мусор в консоль
 const message =
