@@ -48,13 +48,13 @@ function enableScroll() {
 disableScroll();
 
 // preloader
-const preloader-tl = gsap.timeline();
-preloader-tl.to('#preloader-text-over', {yPercent: -20, opacity: 0, delay: 4})
-preloader-tl.to('#preloader-text-main', {yPercent: -20, opacity: 0, delay: 0})
-preloader-tl.to('#preloader-text-under', {yPercent: -20, opacity: 0, delay: 0})
-preloader-tl.to('#preloader-text-under-2', {yPercent: -20, opacity: 0, delay: 0})
-preloader-tl.to('.preloader', {transform: 'scaleY(0)', transformOrigin: 'top', delay: 0})
-preloader-tl.call(enableScroll)
+const preloadertl = gsap.timeline();
+preloadertl.to('#preloader-text-over', {yPercent: -20, opacity: 0, delay: 4})
+preloadertl.to('#preloader-text-main', {yPercent: -20, opacity: 0, delay: 0})
+preloadertl.to('#preloader-text-under', {yPercent: -20, opacity: 0, delay: 0})
+preloadertl.to('#preloader-text-under-2', {yPercent: -20, opacity: 0, delay: 0})
+preloadertl.to('.preloader', {transform: 'scaleY(0)', transformOrigin: 'top', delay: 0})
+preloadertl.call(enableScroll)
 
 // custom cursor
 const cursor = document.querySelector('.cursor');
