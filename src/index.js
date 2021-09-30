@@ -249,16 +249,15 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   };
 });
 
-var yepsiframe = document.querySelector('[class^="yeps-frame-"]');
-var yepselmnt = yepsiframe.contentWindow.document.getElementsByClassName("yeps-logo")[0];
-var yepsoffset = document.getElementsByTagName("html")[0].getAttribute("style");
-
 function unYeps() {
+  var yepsiframe = document.querySelector('[class^="yeps-frame-"]');
+  var yepselmnt = yepsiframe.contentWindow.document.getElementsByClassName("yeps-logo")[0];
   yepselmnt.style.display = "none"; // yeps - лого
 }
 unYeps();
 
 window.onscroll = function() {
+  var yepsoffset = document.getElementsByTagName("html")[0].getAttribute("style");
   if (yepsoffset == "--yeps-top-height-offset:0px; --yeps-top-height:70px;") {
 	document.getElementsByClassName("nav-icon")[0].style.marginTop = "none";
   }
