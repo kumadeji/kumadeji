@@ -259,10 +259,10 @@ function unYeps() {
 unYeps();
 
 window.onscroll = function() {
-  if (yepsoffset != "--yeps-top-height-offset:0px; --yeps-top-height:70px;") {
+  if (yepsoffset == "--yeps-top-height-offset:0px; --yeps-top-height:70px;") {
 	document.getElementsByClassName("nav-icon")[0].style.marginTop = "none";
   }
-  else {
+  if (yepsoffset == "--yeps-top-height-offset:-70px; --yeps-top-height:70px;")
 	document.getElementsByClassName("nav-icon")[0].style.marginTop = "7.5rem";
   }
 };
