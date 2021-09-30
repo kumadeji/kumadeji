@@ -249,12 +249,11 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   };
 });
 
-var YepsFrame = document.getElementsByTagName('iframe')[0];
-var YepsFrameDoc = YepsFrame.contentWindow.document;
-
 window.onload = function () {
   document.body.style.opacity = "1"; // перенесено из html - плавный переход из белого
   
+  var YepsFrame = document.getElementsByTagName('iframe')[0];
+  var YepsFrameDoc = YepsFrame.contentWindow.document;
   var YepsFrameClass = YepsFrameDoc.getElementsByClassName('yeps-logo');
   
   if (YepsFrameDoc.readyState == 'complete') {
@@ -265,6 +264,9 @@ window.onload = function () {
 window.onscroll = function() {
   var YepsOffset = document.getElementsByTagName("html")[0].getAttribute("style");
   var NavButton = document.getElementsByClassName("nav-icon");
+  
+  var YepsFrame = document.getElementsByTagName('iframe')[0];
+  var YepsFrameDoc = YepsFrame.contentWindow.document;
   
   if ((YepsFrameDoc.readyState == 'complete') && (YepsOffset == '--yeps-top-height-offset:0px; --yeps-top-height:70px;')) {
 	NavButton[0].style.marginTop = "7.5rem";
