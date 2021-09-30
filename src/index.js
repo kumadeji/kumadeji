@@ -260,7 +260,6 @@ window.onload = function () {
 
 window.onscroll = function() {
   var navbutton = document.getElementsByClassName("nav-icon");
-  var navtop = window.getComputedStyle(certs, null).getPropertyValue('top');
   
   if (yepsoffset != "--yeps-top-height-offset:-70px; --yeps-top-height:70px;") {
 	navbutton.style.top = "10rem";
