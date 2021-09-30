@@ -254,7 +254,7 @@ window.onload = function () {
   document.body.style.opacity = "1"; // перенесено из html - отображение прелоадера
 
   var YepsFrame = document.getElementsByTagName('iframe')[0];
-  var YepsDoc = YepsFrame.contentDocument || iframe.contentWindow.document;
+  var YepsDoc = YepsFrame.contentDocument || YepsFrame.contentWindow.document;
   var YepsElement = YepsDoc.getElementsByClassName("yeps-logo")[0];
 
   YepsElement.style.display = "none";
@@ -265,12 +265,12 @@ window.onscroll = function() {
   var NavButton = document.getElementsByClassName("nav-icon");
   
   var YepsFrame = document.getElementsByTagName('iframe')[0];
-  var YepsFrameDoc = YepsFrame.contentWindow.document;
+  var YepsDoc = YepsFrame.contentDocument || YepsFrame.contentWindow.document;
   
-  if ((YepsFrameDoc.readyState == 'complete') && (YepsOffset == '--yeps-top-height-offset:0px; --yeps-top-height:70px;')) {
+  if ((YepsDoc.readyState == 'complete') && (YepsOffset == '--yeps-top-height-offset:0px; --yeps-top-height:70px;')) {
 	NavButton[0].style.marginTop = "7.5rem";
   }
-  if ((YepsFrameDoc.readyState == 'complete') && (YepsOffset == '--yeps-top-height-offset:-70px; --yeps-top-height:70px;')) {
+  if ((YepsDoc.readyState == 'complete') && (YepsOffset == '--yeps-top-height-offset:-70px; --yeps-top-height:70px;')) {
 	NavButton[0].style.marginTop = "0rem";
   }
 };
