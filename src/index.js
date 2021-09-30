@@ -250,8 +250,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 function testshit() {
-  var style = window.getComputedStyle(document.querySelector('[class^="yeps-frame-"]')).transform;
-  console.log(style);
+  var teststyle = window.getComputedStyle(document.querySelector('[class^="yeps-frame-"]')).style;
+  console.log(teststyle);
 }
 testshit();
 //transform: translate3d(0px, -70px, 0px)
