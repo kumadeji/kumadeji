@@ -251,8 +251,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 function unYeps() {
   var yepsiframe = document.querySelector('[class^="yeps-frame-"]');
-  var yepselmnt = yepsiframe.contentWindow.document.getElementsByClassName("yeps-logo")[0];
-  yepselmnt.style.display = "none"; // yeps - лого
+  yepsiframe.contentWindow.document.getElementsByClassName("yeps-logo")[0].style.display = "none"; // yeps - лого
 }
 unYeps();
 
