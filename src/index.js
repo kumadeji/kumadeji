@@ -55,7 +55,6 @@ preloadertl.to('#preloader-text-under', {yPercent: -20, opacity: 0, delay: 0})
 preloadertl.to('#preloader-text-under-2', {yPercent: -20, opacity: 0, delay: 0})
 preloadertl.to('.preloader', {transform: 'scaleY(0)', transformOrigin: 'top', delay: 0})
 preloadertl.call(enableScroll)
-preloadertl.call(unYeps)
 
 // custom cursor
 const cursor = document.querySelector('.cursor');
@@ -257,15 +256,14 @@ var yepsoffset = document.getElementsByTagName("html")[0].getAttribute("style");
 function unYeps() {
   yepselmnt.style.display = "none"; // yeps - лого
 }
+unYeps();
 
 window.onscroll = function() {
-  var navbutton = document.getElementsByClassName("nav-icon");
-  
-  if (yepsoffset == "--yeps-top-height-offset:0px; --yeps-top-height:70px;") {
-	navbutton.style.marginTop = "7.5rem";
+  if (yepsoffset != "--yeps-top-height-offset:0px; --yeps-top-height:70px;") {
+	document.getElementsByClassName("nav-icon")[0].style.marginTop = "none";
   }
   else {
-	navbutton.style.marginTop = "none";
+	document.getElementsByClassName("nav-icon")[0].style.marginTop = "7.5rem";
   }
 };
 
