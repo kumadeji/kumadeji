@@ -254,12 +254,9 @@ window.onload = function () {
   document.body.style.opacity = "1"; // перенесено из html - отображение прелоадера
 
   var YepsFrame = document.querySelector('[class^="yeps-frame-"]');
-  var YepsFrameDoc = YepsFrame.contentWindow.document;
   var YepsElement = YepsFrame.contentWindow.document.getElementsByClassName("yeps-logo")[0];
 
-  if (YepsFrameDoc.readyState == 'complete') {
-    YepsElement.style.display = "none";
-  }
+  YepsElement.style.display = "none";
 };
 
 window.onscroll = function() {
