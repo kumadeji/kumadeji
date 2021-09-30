@@ -264,13 +264,13 @@ function unYeps() {
 setTimeout(unYeps, 10000);
 
 function getCustomStyle(theTag,theStyle) {
-    var styles=document.getElementsByTagName(theTag)[0].getAttribute("style").split(';');
-    var astyle;
-    for(var i=0;i<styles.length;i++) {
-        astyle=styles[i].split(':');
-        if(astyle[0]==theStyle) return (astyle[1]);
-    }
-    return undefined;
+  var styles=document.getElementsByTagName(theTag)[0].getAttribute("style").split(';');
+  var astyle;
+  for(var i=0;i<styles.length;i++) {
+    astyle=styles[i].split(':');
+    if(astyle[0]==theStyle) return (astyle[1]);
+  }
+  return undefined;
 }
 
 window.onscroll = function() {
@@ -280,11 +280,24 @@ window.onscroll = function() {
   var YepsFrame = document.getElementsByTagName('iframe')[0];
   var YepsDoc = YepsFrame.contentDocument || YepsFrame.contentWindow.document;
   
+  var WindowWidth = window.innerWidth;
+  
   if ((YepsDoc.readyState == 'complete') && (YepsOffset == '0px')) {
-	NavButton[0].style.marginTop = "7.5rem";
+    if (WindowWidth < 420) {
+      NavButton[0].style.marginTop = "15rem";
+    }
+    else if ((WindowWidth > 419) && (WindowWidth < 574)) {
+      NavButton[0].style.marginTop = "10rem";
+    }
+    else if ((WindowWidth > 573) && (WindowWidth < 1001)) {
+      NavButton[0].style.marginTop = "7.5rem";
+    }
+    else if (WindowWidth > 1000) {
+      NavButton[0].style.marginTop = "5rem";
+    }
   }
   else {
-	NavButton[0].style.marginTop = "0rem";
+    NavButton[0].style.marginTop = "0rem";
   }
 };
 
