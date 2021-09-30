@@ -249,15 +249,16 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   };
 });
 
+// Yeps
 window.onload = function () {
-  document.body.style.opacity = "1"; // перенесено из html - плавный переход из белого
-  
-  var YepsFrame = document.getElementsByTagName('iframe')[0];
+  document.body.style.opacity = "1"; // перенесено из html - отображение прелоадера
+
+  var YepsFrame = document.querySelector('[class^="yeps-frame-"]');
   var YepsFrameDoc = YepsFrame.contentWindow.document;
-  var YepsFrameClass = YepsFrameDoc.getElementsByClassName('yeps-logo');
-  
+  var YepsElement = YepsFrame.contentWindow.document.getElementsByClassName("yeps-logo")[0];
+
   if (YepsFrameDoc.readyState == 'complete') {
-    YepsFrameClass.setAttribute("style","display:none;");
+    YepsElement.style.display = "none";
   }
 };
 
