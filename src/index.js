@@ -254,6 +254,9 @@ window.onload = function () {
 };
 
 window.onscroll = function() {
+  var iframe = document.getElementsByTagName('iframe')[0];
+  var iframeDoc = iframe.contentWindow.document;
+  
   var yepsoffset = document.getElementsByTagName("html")[0].getAttribute("style");
   var navbutton = document.getElementsByClassName("nav-icon");
   
