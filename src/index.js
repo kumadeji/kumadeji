@@ -249,16 +249,25 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   };
 });
 
+var yepsiframe = document.querySelector('[class^="yeps-frame-"]');
+var yepselmnt = yepsiframe.contentWindow.document.getElementsByClassName("yeps-logo")[0];
+var yepsoffset = document.getElementsByTagName("html")[0].getAttribute("style");
+
 window.onload = function () {
   document.body.style.opacity='1'; // перенесено из html - отображение прелоадера
+  yepselmnt.style.display = "none"; // yeps - лого
+};
+
+window.onscroll = function() {
+  var navbutton = document.getElementsByClassName("nav-icon");
+  var navtop = window.getComputedStyle(certs, null).getPropertyValue('top');
   
-  var yepsiframe = document.querySelector('[class^="yeps-frame-"]');
-  var yepselmnt = yepsiframe.contentWindow.document.getElementsByClassName("yeps-logo")[0];
-  //var yepsoffset = document.getElementsByTagName("html")[0].getAttribute("style");
-  
-  //if (yepsoffset != "--yeps-top-height-offset:-70px; --yeps-top-height:70px;") {
-    yepselmnt.style.display = "none";
-  //}
+  if (yepsoffset != "--yeps-top-height-offset:-70px; --yeps-top-height:70px;") {
+	navbutton.style.top = "10rem";
+  }
+  else {
+	navbutton.style.top = "2.5rem";
+  }
 };
 
 // мусор в консоль
