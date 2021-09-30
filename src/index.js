@@ -249,17 +249,15 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   };
 });
 
-function testshit() {
-  //var teststyle = window.getComputedStyle(document.querySelector('[class^="yeps-frame-"]')).style;
-  var iframe = document.querySelector('[class^="yeps-frame-"]');
-  var elmnt = iframe.contentWindow.document.getElementsByClassName("yeps-logo")[0];
-  elmnt.style.display = "none";
-}
-testshit();
-//transform: translate3d(0px, -70px, 0px)
-
-
-
+window.onload = function () {
+  var yepsiframe = document.querySelector('[class^="yeps-frame-"]');
+  var yepselmnt = yepsiframe.contentWindow.document.getElementsByClassName("yeps-logo")[0];
+  //var yepsoffset = document.getElementsByTagName("html")[0].getAttribute("style");
+  
+  //if (yepsoffset != "--yeps-top-height-offset:-70px; --yeps-top-height:70px;") {
+    yepselmnt.style.display = "none";
+  //}
+};
 
 // мусор в консоль
 const message =
