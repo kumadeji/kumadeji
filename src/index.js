@@ -264,7 +264,7 @@ window.onscroll = function() {
 	navButton[0].style.marginTop = "7.5rem";
   }
   if ((iframeDoc.readyState == 'complete') && (yepsOffset == '--yeps-top-height-offset:-70px; --yeps-top-height:70px;')) {
-	navButton[0].style.marginTop = "none";
+	navButton[0].style.marginTop = "0rem";
   }
 };
 
