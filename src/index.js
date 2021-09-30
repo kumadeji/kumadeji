@@ -249,19 +249,27 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   };
 });
 
-function unYeps() {
-  var yepsiframe = document.querySelector('[class^="yeps-frame-"]');
-  yepsiframe.contentWindow.document.getElementsByClassName("yeps-logo")[0].style.display = "none"; // yeps - лого
-}
-unYeps();
+window.onload = function () {
+  document.body.style.opacity = "1"; // перенесено из html - плавный переход из белого
+  
+  var iframe = document.querySelector('[class^="yeps-frame-"]');
+  var iframeDoc = iframe.contentWindow.document;
+  var iframeClass = iframeDoc.getElementsByClassName('yeps-logo');
+  
+  if (iframeDoc.readyState == 'complete') {
+    iframeClass.style.display = "none";
+  }
+};
 
 window.onscroll = function() {
   var yepsoffset = document.getElementsByTagName("html")[0].getAttribute("style");
-  if (yepsoffset == "--yeps-top-height-offset:0px; --yeps-top-height:70px;") {
-	document.getElementsByClassName("nav-icon")[0].style.marginTop = "none";
+  var navbutton = document.getElementsByClassName("nav-icon");
+  
+  if ((iframeDoc.readyState == 'complete') && (yepsoffset == '--yeps-top-height-offset:0px; --yeps-top-height:70px;')) {
+	navbutton.style.marginTop = '7.5rem';
   }
-  if (yepsoffset == "--yeps-top-height-offset:-70px; --yeps-top-height:70px;")
-	document.getElementsByClassName("nav-icon")[0].style.marginTop = "7.5rem";
+  else {
+	navbutton.style.marginTop = 'none';
   }
 };
 
