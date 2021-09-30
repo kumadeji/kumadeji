@@ -251,15 +251,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 window.onload = function () {
   document.body.style.opacity = "1"; // перенесено из html - плавный переход из белого
-  
-  //var iframe = document.querySelector('[class^="yeps-frame-"]');
-  var iframe = document.getElementsByTagName('iframe')[0];
-  var iframeDoc = iframe.contentWindow.document;
-  var iframeClass = iframeDoc[0].getElementsByClassName('yeps-logo');
-  
-  if (iframeDoc.readyState == 'complete') {
-    iframeClass[0].style.display = "none";
-  }
 };
 
 window.onscroll = function() {
