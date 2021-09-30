@@ -250,26 +250,14 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 window.onload = function () {
-    document.body.style.opacity = "1"; // перенесено из html - плавный переход из белого
-
-var iframe = document.getElementsByTagName('iframe')[0];
-
-  var iframeDoc = iframe.contentWindow.document;
-
-  if (iframeDoc.readyState == 'complete') {
-    iframeDoc.body.style.backgroundColor = 'green';
-  }
-  iframe.onload = function() {
-    var iframeDoc2 = iframe.contentWindow.document;
-    iframeDoc2.body.style.backgroundColor = 'orange';
-  }
+  document.body.style.opacity = "1"; // перенесено из html - плавный переход из белого
 };
 
 window.onscroll = function() {
   var yepsoffset = document.getElementsByTagName("html")[0].getAttribute("style");
   var navbutton = document.getElementsByClassName("nav-icon");
   
-  if ((iframeDoc.readyState == 'complete') && (yepsoffset == '--yeps-top-height-offset:0px; --yeps-top-height:70px;')) {
+  if (yepsoffset == '--yeps-top-height-offset:0px; --yeps-top-height:70px;') {
 	navbutton.style.marginTop = '7.5rem';
   }
   else {
