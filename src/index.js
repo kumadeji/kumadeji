@@ -252,13 +252,16 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 // Yeps
 window.onload = function () {
   document.body.style.opacity = "1"; // перенесено из html - отображение прелоадера
+};
 
+function sayHi() {
   var YepsFrame = document.getElementsByTagName('iframe')[0];
   var YepsDoc = YepsFrame.contentDocument || YepsFrame.contentWindow.document;
   var YepsElement = YepsDoc.getElementsByClassName("yeps-logo")[0];
 
   YepsElement.style.display = "none";
-};
+}
+setTimeout(sayHi, 5000);
 
 window.onscroll = function() {
   var YepsOffset = document.getElementsByTagName("html")[0].getAttribute("style");
