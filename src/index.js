@@ -249,31 +249,41 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   };
 });
 
-// Yeps
 window.onload = function () {
   document.body.style.opacity = "1"; // перенесено из html - отображение прелоадера
 };
 
-function sayHi() {
+// Yeps
+function unYeps() {
   var YepsFrame = document.getElementsByTagName('iframe')[0];
   var YepsDoc = YepsFrame.contentDocument || YepsFrame.contentWindow.document;
   var YepsElement = YepsDoc.getElementsByClassName("yeps-logo")[0];
 
   YepsElement.style.display = "none";
 }
-setTimeout(sayHi, 5000);
+setTimeout(unYeps, 10000);
+
+function getCustomStyle(theTag,theStyle) {
+    var styles=document.getElementsByTagName(theTag)[0].getAttribute("style").split(';');
+    var astyle;
+    for(var i=0;i<styles.length;i++) {
+        astyle=styles[i].split(':');
+        if(astyle[0]==theStyle) return (astyle[1]);
+    }
+    return undefined;
+}
 
 window.onscroll = function() {
-  var YepsOffset = document.getElementsByTagName("html")[0].getAttribute("style");
+  var YepsOffset = getCustomStyle("html","--yeps-top-height-offset");
   var NavButton = document.getElementsByClassName("nav-icon");
   
   var YepsFrame = document.getElementsByTagName('iframe')[0];
   var YepsDoc = YepsFrame.contentDocument || YepsFrame.contentWindow.document;
   
-  if ((YepsDoc.readyState == 'complete') && (YepsOffset == '--yeps-top-height-offset:0px; --yeps-top-height:70px;')) {
+  if ((YepsDoc.readyState == 'complete') && (YepsOffset == '0px')) {
 	NavButton[0].style.marginTop = "7.5rem";
   }
-  if ((YepsDoc.readyState == 'complete') && (YepsOffset == '--yeps-top-height-offset:-70px; --yeps-top-height:70px;')) {
+  else {
 	NavButton[0].style.marginTop = "0rem";
   }
 };
