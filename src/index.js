@@ -250,14 +250,18 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 window.onload = function () {
-  document.body.style.opacity = "1"; // перенесено из html - плавный переход из белого
-  
-  var iframe = document.querySelector('[class^="yeps-frame-"]');
+    document.body.style.opacity = "1"; // перенесено из html - плавный переход из белого
+
+var iframe = document.getElementsByTagName('iframe')[0];
+
   var iframeDoc = iframe.contentWindow.document;
-  var iframeClass = iframeDoc.getElementsByClassName('yeps-logo');
-  
+
   if (iframeDoc.readyState == 'complete') {
-    iframeClass.style.display = "none";
+    iframeDoc.body.style.backgroundColor = 'green';
+  }
+  iframe.onload = function() {
+    var iframeDoc2 = iframe.contentWindow.document;
+    iframeDoc2.body.style.backgroundColor = 'orange';
   }
 };
 
