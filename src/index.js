@@ -263,10 +263,13 @@ window.onscroll = function() {
   var YepsOffset = document.getElementsByTagName("html")[0].getAttribute("style");
   var NavButton = document.getElementsByClassName("nav-icon");
   
-  if (YepsOffset == '--yeps-top-height-offset:0px; --yeps-top-height:70px;') {
+  var YepsFrame = document.getElementsByTagName('iframe')[0];
+  var YepsFrameDoc = YepsFrame.contentWindow.document;
+  
+  if ((YepsFrameDoc.readyState == 'complete') && (YepsOffset == '--yeps-top-height-offset:0px; --yeps-top-height:70px;')) {
 	NavButton[0].style.marginTop = "7.5rem";
   }
-  if (YepsOffset == '--yeps-top-height-offset:-70px; --yeps-top-height:70px;') {
+  if ((YepsFrameDoc.readyState == 'complete') && (YepsOffset == '--yeps-top-height-offset:-70px; --yeps-top-height:70px;')) {
 	NavButton[0].style.marginTop = "0rem";
   }
 };
