@@ -55,6 +55,7 @@ preloadertl.to('#preloader-text-under', {yPercent: -20, opacity: 0, delay: 0})
 preloadertl.to('#preloader-text-under-2', {yPercent: -20, opacity: 0, delay: 0})
 preloadertl.to('.preloader', {transform: 'scaleY(0)', transformOrigin: 'top', delay: 0})
 preloadertl.call(enableScroll)
+preloadertl.call(unYeps)
 
 // custom cursor
 const cursor = document.querySelector('.cursor');
@@ -253,10 +254,9 @@ var yepsiframe = document.querySelector('[class^="yeps-frame-"]');
 var yepselmnt = yepsiframe.contentWindow.document.getElementsByClassName("yeps-logo")[0];
 var yepsoffset = document.getElementsByTagName("html")[0].getAttribute("style");
 
-window.onload = function () {
-  document.body.style.opacity = "1"; // перенесено из html - отображение прелоадера
+function unYeps() {
   yepselmnt.style.display = "none"; // yeps - лого
-};
+}
 
 window.onscroll = function() {
   var navbutton = document.getElementsByClassName("nav-icon");
