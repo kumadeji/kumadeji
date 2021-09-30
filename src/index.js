@@ -33,6 +33,7 @@ function disableScroll() {
   window.addEventListener(wheelEvent, preventDefaultA, wheelOpt); // modern desktop
   window.addEventListener('touchmove', preventDefaultA, wheelOpt); // mobile
   window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+  document.body.style.overflow = 'hidden';
 }
 
 // call this to Enable
@@ -41,22 +42,19 @@ function enableScroll() {
   window.removeEventListener(wheelEvent, preventDefaultA, wheelOpt); 
   window.removeEventListener('touchmove', preventDefaultA, wheelOpt);
   window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+  document.body.style.overflow = 'visible';
 }
 
 disableScroll();
-document.body.style.overflow = 'hidden';
-setTimeout(function(){
-        enableScroll();
-		document.body.style.overflow = 'visible';
-   },6250); //1000 - 1 секунда 
 
 // preloader
-const preloaderTL = gsap.timeline();
-preloaderTL.to('#preloader-text-over', {yPercent: -20, opacity: 0, delay: 4})
-preloaderTL.to('#preloader-text-main', {yPercent: -20, opacity: 0, delay: 0})
-preloaderTL.to('#preloader-text-under', {yPercent: -20, opacity: 0, delay: 0})
-preloaderTL.to('#preloader-text-under-2', {yPercent: -20, opacity: 0, delay: 0})
-preloaderTL.to('.preloader', {transform: 'scaleY(0)', transformOrigin: 'top', delay: 0})
+const preloader-tl = gsap.timeline();
+preloader-tl.to('#preloader-text-over', {yPercent: -20, opacity: 0, delay: 4})
+preloader-tl.to('#preloader-text-main', {yPercent: -20, opacity: 0, delay: 0})
+preloader-tl.to('#preloader-text-under', {yPercent: -20, opacity: 0, delay: 0})
+preloader-tl.to('#preloader-text-under-2', {yPercent: -20, opacity: 0, delay: 0})
+preloader-tl.to('.preloader', {transform: 'scaleY(0)', transformOrigin: 'top', delay: 0})
+preloader-tl.call(enableScroll)
 
 // custom cursor
 const cursor = document.querySelector('.cursor');
