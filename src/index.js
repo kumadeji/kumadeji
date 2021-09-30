@@ -262,10 +262,10 @@ window.onscroll = function() {
   var navbutton = document.getElementsByClassName("nav-icon");
   
   if (yepsoffset == "--yeps-top-height-offset:0px; --yeps-top-height:70px;") {
-	navbutton.style.margin-top = "7.5rem";
+	navbutton.style.marginTop = "7.5rem";
   }
   else {
-	navbutton.style.margin-top = "none";
+	navbutton.style.marginTop = "none";
   }
 };
 
