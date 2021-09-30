@@ -251,17 +251,26 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 window.onload = function () {
   document.body.style.opacity = "1"; // перенесено из html - плавный переход из белого
+  
+  //var iframe = document.querySelector('[class^="yeps-frame-"]');
+  var iframe = document.getElementsByTagName('iframe')[0];
+  var iframeDoc = iframe.contentWindow.document;
+  var iframeClass = iframeDoc[0].getElementsByClassName('yeps-logo');
+  
+  if (iframeDoc.readyState == 'complete') {
+    iframeClass[0].style.display = "none";
+  }
 };
 
 window.onscroll = function() {
   var yepsoffset = document.getElementsByTagName("html")[0].getAttribute("style");
   var navbutton = document.getElementsByClassName("nav-icon");
   
-  if (yepsoffset == "--yeps-top-height-offset:0px; --yeps-top-height:70px;") {
-	navbutton.style.marginTop = "7.5rem";
+  if ((iframeDoc.readyState == 'complete') && (yepsoffset == '--yeps-top-height-offset:0px; --yeps-top-height:70px;')) {
+	navbutton[0].style.marginTop = "7.5rem";
   }
   else {
-	navbutton.style.marginTop = "none";
+	navbutton[0].style.marginTop = "none";
   }
 };
 
