@@ -249,22 +249,12 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   };
 });
 
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    // var iframeWindow = frames['iframe-name'];
-    // var iframeWindow = document.querySelector('#iframe-id').contentWindow
-    // var iframeWindow = document.getElementById('iframe-id').contentWindow
-	var iframeWindow = document.querySelector('[class^="yeps-frame-"]').contentWindow;
-
-    iframeWindow.addEventListener('DOMContentLoaded', function () {
-        console.log('iframe DOM is loaded!');
-    });
-});
-
-
-
+function testshit() {
+  var style = window.getComputedStyle(document.querySelector('[class^="yeps-frame-"]')).transform;
+  console.log(style);
+}
+testshit();
+//transform: translate3d(0px, -70px, 0px)
 
 // мусор в консоль
 const message =
