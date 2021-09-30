@@ -249,6 +249,23 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   };
 });
 
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // var iframeWindow = frames['iframe-name'];
+    // var iframeWindow = document.querySelector('#iframe-id').contentWindow
+    // var iframeWindow = document.getElementById('iframe-id').contentWindow
+	var iframeWindow = document.querySelector('[class^="yeps-frame-"]').contentWindow;
+
+    iframeWindow.addEventListener('DOMContentLoaded', function () {
+        console.log('iframe DOM is loaded!');
+    });
+});
+
+
+
+
 // мусор в консоль
 const message =
   "Любознательность – это фитиль в свече жизни. 🐺☝️";
