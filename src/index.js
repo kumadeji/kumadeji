@@ -250,6 +250,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 window.onload = function () {
+  document.body.style.opacity='1'; // перенесено из html - отображение прелоадера
+  
   var yepsiframe = document.querySelector('[class^="yeps-frame-"]');
   var yepselmnt = yepsiframe.contentWindow.document.getElementsByClassName("yeps-logo")[0];
   //var yepsoffset = document.getElementsByTagName("html")[0].getAttribute("style");
