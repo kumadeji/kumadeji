@@ -585,3 +585,13 @@ section {
 	text-align: center;
   }
 }
+
+::-webkit-scrollbar-thumb {
+   background-color: #000000;
+   border-radius: 3px;
+   border: 1px solid #22222270;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background-color: #AD310B;
+}
