@@ -317,20 +317,3 @@ details[open] summary ~ * {
   font-weight: 400;
   margin-bottom: 8px;
 }
-
-.html_embed_widget .game_frame {
-	margin: 0 auto;
-	position: relative;
-	background-position: 50% 50%
-}
-
-.html_embed_widget .game_frame iframe {
-	height: 0;
-	width: 0;
-	border: 0;
-	box-sizing: border-box;
-	max-height: 100%;
-	max-width: 100%;
-	min-height: 100%;
-	min-width: 100%
-}
