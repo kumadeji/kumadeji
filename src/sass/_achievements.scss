@@ -140,19 +140,10 @@
 		text-decoration: underline;
 		text-decoration-color: #00000026;
 	  }
-	  p {
+	  p, h3 {
 		margin: 1rem;
-		margin-left: 1.5rem;
-		margin-right: 1.5rem;
-		
-		@media (max-width: $bp-mobile) {
-		  text-align: center;
-		}
-	  }
-	  h3 {
-		margin: 1rem;
-		margin-left: 2.75rem;
-		margin-right: 2.75rem;
+		margin-left: 1.75rem;
+		margin-right: 1.75rem;
 		
 		@media (max-width: $bp-mobile) {
 		  text-align: center;
