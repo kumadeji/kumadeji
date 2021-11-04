@@ -159,10 +159,8 @@
 	
 	table {
 	  padding-left: 1rem;
-	  font-size: 1.4rem;
 	  margin-top: 1rem;
 	  img {
-		margin-right: .5rem;
 		width: 16px;
 		height: 10px;
 		border: 1px solid rgba(0,0,0,.31);
@@ -218,13 +216,6 @@ details[open] summary ~ * {
 @keyframes sweep {
   0%    {opacity: 0; transform: translateY(-10px)}
   100%  {opacity: 1; transform: translateY(0)}
-}
-
-.second-heading {
-  @media (max-width: $bp-mobile) {
-	font-size: 2rem;
-    text-align: center;
-  }
 }
 
 .smartcat-container {

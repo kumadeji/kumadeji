@@ -105,157 +105,144 @@
 	
 	<style>
 	:root {
-	    --bg-table-stripe: #f6f6f5;
-	    --b-table: #e3e3e2;
-	    --caption: #242423;
+	  --bg-table-stripe: #f6f6f5;
+	  --b-table: #e3e3e2;
 	}
 	
 	table {
-	    background-color: transparent;
-	    border-collapse:collapse;
-	}
-	
-	th {
-	    text-align:left
+	  background-color: transparent;
+	  border-collapse: collapse;
 	}
 	
 	.evnt-txt-center {
-	      text-align: center!important
-	    }
+	  text-align: center!important
+	}
 	
-	    .evnt-txt-left {
-	      text-align: left!important
-	    }
+	.evnt-txt-left {
+	  text-align: left!important
+	}
 	
-	    .evnt-txt-right {
-	      text-align: right!important
-	    }
-	    
-	.evnt-table caption {
-	      color: var(--caption);
-	      font-size: 1.13em;
-	      font-weight: 700;
-	      padding-bottom: .56rem
-	    }
+	.evnt-txt-right {
+	  text-align: right!important
+	}
 	
-	    .evnt-table thead {
-	      font-size: .84em
-	    }
+	.evnt-table thead {
+	  font-size: .84em
+	}
 	
-	    .evnt-table tbody {
-	      border-bottom: 1px solid var(--b-table);
-	      border-top: 1px solid var(--b-table);
-	      font-size: .84em
-	    }
+	.evnt-table tbody {
+	  border-bottom: 1px solid var(--b-table);
+	  border-top: 1px solid var(--b-table);
+	  font-size: .84em
+	}
 	
-	    .evnt-table tfoot {
-	      font-size: .84em
-	    }
+	.evnt-table tfoot {
+	  font-size: .84em
+	}
 	
-	    .evnt-table td, .evnt-table th {
-	      padding-right: 1.78em
-	    }
+	.evnt-table td, .evnt-table th {
+	  padding-right: 1.78em
+	}
 	
-	    .evnt-table-bordered, .evnt-table-bordered td, .evnt-table-bordered th {
-	      border: 1px solid var(--b-table)
-	    }
+	.evnt-table-bordered, .evnt-table-bordered td, .evnt-table-bordered th {
+	  border: 1px solid var(--b-table)
+	}
 	
-	    .evnt-table-bordered td, .evnt-table-bordered th, .evnt-table-striped td, .evnt-table-striped th {
-	      padding-left: 1em;
-	      padding-right: 1em
-	    }
+	.evnt-table-bordered td, .evnt-table-bordered th, .evnt-table-striped td, .evnt-table-striped th {
+	  padding-left: 1em;
+	  padding-right: 1em
+	}
 	
-	    .evnt-table-bordered tr:not(:last-child), .evnt-table-striped tr:not(:last-child) {
-	      border-bottom: 1px solid var(--b-table)
-	    }
+	.evnt-table-bordered tr:not(:last-child), .evnt-table-striped tr:not(:last-child) {
+	  border-bottom: 1px solid var(--b-table)
+	}
 	
-	    .evnt-table-striped tbody tr:nth-of-type(2n) {
-	      background-color: var(--bg-table-stripe)
-	    }
+	.evnt-table-striped tbody tr:nth-of-type(2n) {
+	  background-color: var(--bg-table-stripe)
+	}
 	
-	    .evnt-table thead td, .evnt-table thead th {
-	      padding-bottom: .75em;
-	      vertical-align: bottom
-	    }
+	.evnt-table thead td, .evnt-table thead th {
+	  padding-bottom: .75em;
+	  vertical-align: bottom
+	}
 	
-	    .evnt-table tbody td, .evnt-table tbody th, .evnt-table tfoot td, .evnt-table tfoot th {
-	      padding-top: .75em;
-	      vertical-align: top
-	    }
+	.evnt-table tbody td, .evnt-table tbody th, .evnt-table tfoot td, .evnt-table tfoot th {
+	  padding-top: .75em;
+	  vertical-align: top
+	}
 	
-	    .evnt-table tbody td, .evnt-table tbody th {
-	      padding-bottom: .75em
-	    }
+	.evnt-table tbody td, .evnt-table tbody th {
+	  padding-bottom: .75em
+	}
 	
-	    .evnt-table-bordered thead th {
-	      padding-top: 1.33em
-	    }
+	.evnt-table-bordered thead th {
+	  padding-top: 1.33em
+	}
 	
-	    .evnt-wrapper-table-scroll {
-	      overflow-x: auto;
-	      -webkit-overflow-scrolling: touch;
-	      left: 50%;
-	      margin-left: -50vw;
-	      margin-right: -50vw;
-	      padding-bottom: 1em;
-	      position: relative;
-	      right: 50%;
-	      width: 100vw
-	    }
+	.evnt-wrapper-table-scroll {
+	  overflow-x: auto;
+	  -webkit-overflow-scrolling: touch;
+	  left: 50%;
+	  margin-left: -50vw;
+	  margin-right: -50vw;
+	  padding-bottom: 1em;
+	  position: relative;
+	  right: 50%;
+	  width: 100vw
+	}
 	
-	    @media only screen and (max-width:42.09em) {
-	      .evnt-table-responsive thead {
-	        clip: rect(0 0 0 0);
-	        -webkit-clip-path: inset(50%);
-	        clip-path: inset(50%);
-	        height: 1px;
-	        overflow: hidden;
-	        position: absolute;
-	        width: 1px;
-	        white-space: nowrap
-	      }
-	      .evnt-table-responsive tr {
-	        display: block
-	      }
-	      .evnt-table-responsive td {
-	        -webkit-column-gap: 3.16vw;
-	        -moz-column-gap: 3.16vw;
-	        column-gap: 3.16vw;
-	        display: grid;
-	        grid-template-columns: 1fr 2fr;
-	        text-align: left!important
-	      }
-	      .evnt-table-responsive.evnt-table-bordered, .evnt-table-responsive.evnt-table-bordered thead th {
-	        border-width: 0
-	      }
-	      .evnt-table-responsive.evnt-table-bordered tbody td {
-	        border-top-width: 0
-	      }
-	      .evnt-table-responsive:not(.evnt-table-bordered) tbody tr {
-	        padding-bottom: .75em
-	      }
-	      .evnt-table-responsive:not(.evnt-table-bordered) tbody td {
-	        padding-bottom: 0
-	      }
-	      .evnt-table-responsive:not(.evnt-table-bordered):not(.evnt-table-striped) tbody td {
-	        padding-right: 0
-	      }
-	      .evnt-table-responsive.evnt-table-bordered tbody tr:last-child td:last-child {
-	        border-bottom-width: 0
-	      }
-	      .evnt-table-responsive tbody td:before {
-	        content: attr(data-label);
-	        float: left;
-	        font-weight: 700;
-	        padding-right: 1.78em
-	      }
-	    }
+	@media only screen and (max-width:42.09em) {
+	  .evnt-table-responsive thead {
+	    clip: rect(0 0 0 0);
+	    -webkit-clip-path: inset(50%);
+	    clip-path: inset(50%);
+	    height: 1px;
+	    overflow: hidden;
+	    position: absolute;
+	    width: 1px;
+	    white-space: nowrap
+	  }
+	  .evnt-table-responsive tr {
+	    display: block
+	  }
+	  .evnt-table-responsive td {
+	    -webkit-column-gap: 3.16vw;
+	    -moz-column-gap: 3.16vw;
+	    column-gap: 3.16vw;
+	    display: grid;
+	    grid-template-columns: 1fr 2fr;
+	    text-align: left!important
+	  }
+	  .evnt-table-responsive.evnt-table-bordered, .evnt-table-responsive.evnt-table-bordered thead th {
+	    border-width: 0
+	  }
+	  .evnt-table-responsive.evnt-table-bordered tbody td {
+	    border-top-width: 0
+	  }
+	  .evnt-table-responsive:not(.evnt-table-bordered) tbody tr {
+	    padding-bottom: .75em
+	  }
+	  .evnt-table-responsive:not(.evnt-table-bordered) tbody td {
+	    padding-bottom: 0
+	  }
+	  .evnt-table-responsive:not(.evnt-table-bordered):not(.evnt-table-striped) tbody td {
+	    padding-right: 0
+	  }
+	  .evnt-table-responsive.evnt-table-bordered tbody tr:last-child td:last-child {
+	    border-bottom-width: 0
+	  }
+	  .evnt-table-responsive tbody td:before {
+	    content: attr(data-label);
+	    float: left;
+	    font-weight: 700;
+	    padding-right: 1.78em
+	  }
+	}
 	
 	.evnt-overflow-x-auto {
-	      overflow-x: auto!important;
-	      -webkit-overflow-scrolling: touch
-	    }
-	    
+	  overflow-x: auto!important;
+	  -webkit-overflow-scrolling: touch
+	}
 	</style>
 	
   </head>
@@ -612,7 +599,7 @@
           <h5 class="heading-4 sec-color mb-s">Мои достижения &mdash;</h5>
           <div class="achievements-box__wrapper">
             <div class="achievements-box" id="width-read-2">
-              <h3 class="heading-3 mb-0 second-heading">Образование и опыт 🎓</h3>
+              <h3 class="heading-3 mb-0">Образование и опыт 🎓</h3>
               <p class="paragraph mb-s mt-s">
                 Студент 4 курса в одном из лучших университетов Дальнего Востока — <strong>Тихоокеанском государственном университете</strong>, располагающим сильной школой востоковедов-переводчиков 💪
 			  </p><p class="paragraph mb-s">Обладаю опытом:</p>
@@ -635,7 +622,7 @@
               </ul>
             </div>
             <div class="achievements-box">
-              <h3 class="heading-3 mb-0 second-heading">Статистика SmartCAT</h3>
+              <h3 class="heading-3 mb-0">Статистика SmartCAT</h3>
               <p class="paragraph mb-s mt-s">Поскольку большая часть моих переводов — это проекты на <strong>SmartCAT</strong>, личная статистика — <strong>мой ключевой показатель</strong></p>
 			  <p class="paragraph mb-s">Откройте <a href="https://smartcat.com/marketplace/user/ernest-bagretsov" target="_blank" rel="noopener noreferrer" class="text-link">мой профиль</a>, чтобы узнать больше об опыте участия в проектах, ознакомиться с примерами и отрывками переведённых материалов:</p>
 			  
@@ -696,7 +683,7 @@
             </div>
 			
             <div class="achievements-box" id="width-write-2">
-              <h3 class="heading-3 mb-0 second-heading">О целях 📌</h3>
+              <h3 class="heading-3 mb-0">О целях 📌</h3>
               <p class="paragraph mb-s mt-s">Больше опыта — больше перспектив! Расширение числа проектов с моим участием и переход от неофициальных и любительских к <strong>официальным</strong> переводам — мои основные векторы развития на ближайшие годы 🎯</p>
 			  <p class="paragraph mb-s">По мере накопления числа выполненных проектов рассчитываю на получение статуса <strong>«Протестирован»</strong> по ключевым из моих направлений на <strong>SmartCAT</strong></p>
 			  <p class="paragraph mb-s">На ближайший год запланировано обучение в переводческом бюро, что, надеюсь, поспособствует расширению тематик переводимых материалов 🤝</p>
@@ -707,7 +694,7 @@
 		  <div class="courses-box__wrapper">
 		    <div class="courses-box" id="width-read">
 		      <details>
-		      <summary class="heading-3 mb-0 second-heading">Участие в профильных мероприятиях и их проведение 📖</summary>
+		      <summary class="heading-3 mb-0">Участие в профильных мероприятиях и их проведение 📖</summary>
 		      <!-- <ul> -->
 			  
 				<p>
@@ -727,7 +714,7 @@
 				</li> -->
 				
 				<details>
-				<summary>Завершенные мероприятия:</summary>
+				<summary class="heading-6">Завершенные мероприятия:</summary>
 				  <table class="evnt-table evnt-table-responsive evnt-table-striped evnt-w-100%">
 				    <tbody>
 					
