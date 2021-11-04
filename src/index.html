@@ -102,6 +102,162 @@
 	    })(document, window, 'Yeps');
 	</script>
 	<!-- /Yeps {/literal} -->
+	
+	<style>
+	:root {
+	    --bg-table-stripe: #f6f6f5;
+	    --b-table: #e3e3e2;
+	    --caption: #242423;
+	}
+	
+	table {
+	    background-color: transparent;
+	    border-collapse:collapse;
+	}
+	
+	th {
+	    text-align:left
+	}
+	
+	.evnt-txt-center {
+	      text-align: center!important
+	    }
+	
+	    .evnt-txt-left {
+	      text-align: left!important
+	    }
+	
+	    .evnt-txt-right {
+	      text-align: right!important
+	    }
+	    
+	.evnt-table caption {
+	      color: var(--caption);
+	      font-size: 1.13em;
+	      font-weight: 700;
+	      padding-bottom: .56rem
+	    }
+	
+	    .evnt-table thead {
+	      font-size: .84em
+	    }
+	
+	    .evnt-table tbody {
+	      border-bottom: 1px solid var(--b-table);
+	      border-top: 1px solid var(--b-table);
+	      font-size: .84em
+	    }
+	
+	    .evnt-table tfoot {
+	      font-size: .84em
+	    }
+	
+	    .evnt-table td, .evnt-table th {
+	      padding-right: 1.78em
+	    }
+	
+	    .evnt-table-bordered, .evnt-table-bordered td, .evnt-table-bordered th {
+	      border: 1px solid var(--b-table)
+	    }
+	
+	    .evnt-table-bordered td, .evnt-table-bordered th, .evnt-table-striped td, .evnt-table-striped th {
+	      padding-left: 1em;
+	      padding-right: 1em
+	    }
+	
+	    .evnt-table-bordered tr:not(:last-child), .evnt-table-striped tr:not(:last-child) {
+	      border-bottom: 1px solid var(--b-table)
+	    }
+	
+	    .evnt-table-striped tbody tr:nth-of-type(2n) {
+	      background-color: var(--bg-table-stripe)
+	    }
+	
+	    .evnt-table thead td, .evnt-table thead th {
+	      padding-bottom: .75em;
+	      vertical-align: bottom
+	    }
+	
+	    .evnt-table tbody td, .evnt-table tbody th, .evnt-table tfoot td, .evnt-table tfoot th {
+	      padding-top: .75em;
+	      vertical-align: top
+	    }
+	
+	    .evnt-table tbody td, .evnt-table tbody th {
+	      padding-bottom: .75em
+	    }
+	
+	    .evnt-table-bordered thead th {
+	      padding-top: 1.33em
+	    }
+	
+	    .evnt-wrapper-table-scroll {
+	      overflow-x: auto;
+	      -webkit-overflow-scrolling: touch;
+	      left: 50%;
+	      margin-left: -50vw;
+	      margin-right: -50vw;
+	      padding-bottom: 1em;
+	      position: relative;
+	      right: 50%;
+	      width: 100vw
+	    }
+	
+	    @media only screen and (max-width:42.09em) {
+	      .evnt-table-responsive thead {
+	        clip: rect(0 0 0 0);
+	        -webkit-clip-path: inset(50%);
+	        clip-path: inset(50%);
+	        height: 1px;
+	        overflow: hidden;
+	        position: absolute;
+	        width: 1px;
+	        white-space: nowrap
+	      }
+	      .evnt-table-responsive tr {
+	        display: block
+	      }
+	      .evnt-table-responsive td {
+	        -webkit-column-gap: 3.16vw;
+	        -moz-column-gap: 3.16vw;
+	        column-gap: 3.16vw;
+	        display: grid;
+	        grid-template-columns: 1fr 2fr;
+	        text-align: left!important
+	      }
+	      .evnt-table-responsive.evnt-table-bordered, .evnt-table-responsive.evnt-table-bordered thead th {
+	        border-width: 0
+	      }
+	      .evnt-table-responsive.evnt-table-bordered tbody td {
+	        border-top-width: 0
+	      }
+	      .evnt-table-responsive:not(.evnt-table-bordered) tbody tr {
+	        padding-bottom: .75em
+	      }
+	      .evnt-table-responsive:not(.evnt-table-bordered) tbody td {
+	        padding-bottom: 0
+	      }
+	      .evnt-table-responsive:not(.evnt-table-bordered):not(.evnt-table-striped) tbody td {
+	        padding-right: 0
+	      }
+	      .evnt-table-responsive.evnt-table-bordered tbody tr:last-child td:last-child {
+	        border-bottom-width: 0
+	      }
+	      .evnt-table-responsive tbody td:before {
+	        content: attr(data-label);
+	        float: left;
+	        font-weight: 700;
+	        padding-right: 1.78em
+	      }
+	    }
+	
+	.evnt-overflow-x-auto {
+	      overflow-x: auto!important;
+	      -webkit-overflow-scrolling: touch
+	    }
+	    
+	</style>
+	
   </head>
   
   <body class="scrollbar">
@@ -552,7 +708,7 @@
 		    <div class="courses-box" id="width-read">
 		      <details>
 		      <summary class="heading-3 mb-0 second-heading">Участие в профильных мероприятиях и их проведение 📖</summary>
-		      <ul>
+		      <!-- <ul> -->
 			  
 				<p>
 				  Здесь указаны различные <strong>конференции</strong> и <strong>вебинары</strong>, <strong>курсы</strong> и <strong>конкурсы</strong>, и многое другое - всё то, что связано с нашей профессией
@@ -562,13 +718,481 @@
 				  Я стараюсь держать руку на пульсе всех тематических мероприятий и регулярно обновляю список, поэтому если вам это интересно так же, как и мне, заглядывайте в этот раздел, и, может, ещё увидимся на одной из встреч! 👋
 				</p>
 				
-				<h3>Предстоящие мероприятия:</h3>
+				<!-- <h3>Предстоящие мероприятия:</h3>
 				
 				<li>
 				  <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
 				  <a href="https://www.smartcat.com/online-events/locfromhome-conference/" target="_blank" rel="noopener noreferrer">
 				  #LocFromHome — Globalization Online Festival — от SmartCAT — 11 ноября 2021</a>
+				</li> -->
+				
+				<details>
+				<summary>Завершенные мероприятия:</summary>
+				  <table class="evnt-table evnt-table-responsive evnt-table-striped evnt-w-100%">
+				    <tbody>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://www.ciol.org.uk/ciol-training" target="_blank" rel="noopener noreferrer">
+				        <td>Translation and Transcreation: Diversifying your Services</td>
+				      </a>
+				      <a>
+				        <td>от Chartered Institute of Linguists (CIOL)</td>
+				      </a>
+				      <td class="evnt-txt-center">29 октября 2021</td>
+				      <td class="evnt-txt-center">Бесплатно</td>
+				      <td class="evnt-txt-center">
+					    <a href="../link-unavailable" target="_blank" rel="noopener noreferrer" style="font-weight: 600">
+					    [Сертификат об участии 💾]
+					    </a>
+					  </td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://www.gala-global.org/events/events-calendar/live-webinar-all-i-want-christmas-great-lsp" target="_blank" rel="noopener noreferrer">
+				        <td>All I Want for Christmas Is a Great LSP</td>
+				      </a>
+				      <a>
+				        <td>от Globalization and Localization Association (GALA) / Microsoft Corporation</td>
+				      </a>
+				      <td class="evnt-txt-center">27 октября 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://www.linkedin.com/events/6831598745944109056/" target="_blank" rel="noopener noreferrer">
+				        <td>Writing for Optimal Global Customer Experience</td>
+				      </a>
+				      <a>
+				        <td>от Lionbridge</td>
+				      </a>
+				      <td class="evnt-txt-center">27 октября 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://unbabel.com/langops-universe-2021/" target="_blank" rel="noopener noreferrer">
+				        <td>LangOps Universe 2021</td>
+				      </a>
+				      <a>
+				        <td>от Unbabel / Slator</td>
+				      </a>
+				      <td class="evnt-txt-center">27-28 октября 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/ru.png" srcset="https://flagcdn.com/w40/ru.png 2x">
+					  </td>
+				      <a href="https://jvtacademy.com/russia/" target="_blank" rel="noopener noreferrer">
+				        <td>Профессия аудиовизуального переводчика: принципы работы с различными жанрами и многое другое</td>
+				      </a>
+				      <a>
+				        <td>от Японской академии аудиовизуального перевода (JVTA)</td>
+				      </a>
+				      <td class="evnt-txt-center">23 октября 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://www.ym-language-services.com/en/pronouncing-medical-english/" target="_blank" rel="noopener noreferrer">
+				        <td>Pronouncing Medical English: An Introduction</td>
+				      </a>
+				      <a>
+				        <td>от YM Language Services</td>
+				      </a>
+				      <td class="evnt-txt-center">16 октября 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://insights.amplexor.com/go-global-a-practical-guide-to-localization-webinar" target="_blank" rel="noopener noreferrer">
+				        <td>Go Global: A Practical Guide to Localization</td>
+				      </a>
+				      <a>
+				        <td>от Amplexor</td>
+				      </a>
+				      <td class="evnt-txt-center">14 октября 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://www.gala-global.org/events/events-calendar/live-webinar-building-house-localization-department-scratch" target="_blank" rel="noopener noreferrer">
+				        <td>Building an In-house Localization Department from Scratch</td>
+				      </a>
+				      <a>
+				        <td>от Globalization and Localization Association (GALA)</td>
+				      </a>
+				      <td class="evnt-txt-center">14 октября 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://itch.io/jam/locjam-wmhd" target="_blank" rel="noopener noreferrer">
+				        <td>LocJAM World Mental Health Day</td>
+				      </a>
+				      <a>
+				        <td>от LocJAM</td>
+				      </a>
+				      <td class="evnt-txt-center">8-11 октября 2021</td>
+				      <td class="evnt-txt-center">Бесплатно</td>
+				      <td class="evnt-txt-center">
+					    <a href="https://lockload.itch.io/scriptchangereplaybylocknload" target="_blank" rel="noopener noreferrer" style="font-weight: 600">
+					    [Групповой проект 💾]
+					    </a>
+					  </td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://www.smartling.com/globalready/webinars/the-buy-in-working-cross-functionally-as-a-loc-manager/" target="_blank" rel="noopener noreferrer">
+				        <td>The Buy-In: Working Cross-Functionally as a Loc Manager</td>
+				      </a>
+				      <a>
+				        <td>от Smartling</td>
+				      </a>
+				      <td class="evnt-txt-center">7 октября 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://resources.lilt.com/lilt-ascend" target="_blank" rel="noopener noreferrer">
+				        <td>Ascend 2021: Ignite the Global Customer Experience Revolution</td>
+				      </a>
+				      <a>
+				        <td>от Litl</td>
+				      </a>
+				      <td class="evnt-txt-center">6-7 октября 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+				      </td>
+				      <a href="https://www.innovationintranslation.com/" target="_blank" rel="noopener noreferrer">
+				        <td>Innovation In Translation Summit 2021</td>
+				      </a>
+				      <a>
+				        <td>от techforword</td>
+				      </a>
+				      <td class="evnt-txt-center">4-6 октября 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/ru.png" srcset="https://flagcdn.com/w40/ru.png 2x">
+					  </td>
+				      <a href="https://www.gamelocalization.ru/dictation" target="_blank" rel="noopener noreferrer">
+				        <td>Переводческий диктант 2.0</td>
+				      </a>
+				      <a>
+				        <td>от Gamelocalization / Levsha</td>
+				      </a>
+				      <td class="evnt-txt-center">1-7 октября 2021</td>
+				      <td class="evnt-txt-center">Бесплатно</td>
+				      <td class="evnt-txt-center">
+					    <a href="../link-unavailable" target="_blank" rel="noopener noreferrer" style="font-weight: 600">
+					    [Сертификат об участии 💾]
+					    </a>
+					  </td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://www.linkedin.com/events/designingloc-friendlyversusloc-6835617833855029248/" target="_blank" rel="noopener noreferrer">
+				        <td>Designing Localization-friendly Versus Localization-ready Content</td>
+				      </a>
+				      <a>
+				        <td>от Lionbridge</td>
+				      </a>
+				      <td class="evnt-txt-center">30 сентября 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/ru.png" srcset="https://flagcdn.com/w40/ru.png 2x">
+					  </td>
+				      <a href="https://events.spbu.ru/events/bartov" target="_blank" rel="noopener noreferrer">
+				        <td>Специфика маркетингового перевода</td>
+				      </a>
+				      <a>
+				        <td>от СПбГУ</td>
+				      </a>
+				      <td class="evnt-txt-center">28 сентября 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/ru.png" srcset="https://flagcdn.com/w40/ru.png 2x">
+					  </td>
+				      <a href="https://jvtacademy.com/russia/" target="_blank" rel="noopener noreferrer">
+				        <td>Аудиовизуальный перевод с японского на русский: что это такое и с чем его едят</td>
+				      </a>
+				      <a>
+				        <td>от Японской академии аудиовизуального перевода (JVTA)</td>
+				      </a>
+				      <td class="evnt-txt-center">26 сентября 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/ru.png" srcset="https://flagcdn.com/w40/ru.png 2x">
+					  </td>
+				      <a href="https://events.spbu.ru/events/gilyarevskaya" target="_blank" rel="noopener noreferrer">
+				        <td>Переводчик в сфере медицины: требования к подготовке</td>
+				      </a>
+				      <a>
+				        <td>от СПбГУ</td>
+				      </a>
+				      <td class="evnt-txt-center">14 сентября 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://www.smartling.com/globalready/webinars/move-on-up-furthering-your-localization-career/" target="_blank" rel="noopener noreferrer">
+				        <td>Move On Up: Furthering Your Localization Career</td>
+				      </a>
+				      <a>
+				        <td>от Smartling</td>
+				      </a>
+				      <td class="evnt-txt-center">9 сентября 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://slator.com/slatorcon-remote-september-2021/" target="_blank" rel="noopener noreferrer">
+				        <td>SlatorCon Remote September 2021</td>
+				      </a>
+				      <a>
+				        <td>от Slator</td>
+				      </a>
+				      <td class="evnt-txt-center">8 сентября 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/ru.png" srcset="https://flagcdn.com/w40/ru.png 2x">
+					  </td>
+				      <a href="https://gamelocalization.ru/marafon" target="_blank" rel="noopener noreferrer">
+				        <td>Марафон: О локализации за 2 дня</td>
+				      </a>
+				      <a>
+				        <td>от Gamelocalization / Levsha</td>
+				      </a>
+				      <td class="evnt-txt-center">17-18 августа 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/ru.png" srcset="https://flagcdn.com/w40/ru.png 2x">
+					  </td>
+				      <a href="https://events.spbu.ru/events/summer-translate" target="_blank" rel="noopener noreferrer">
+				        <td>II Летняя школа перевода</td>
+				      </a>
+				      <a>
+				        <td>от СПбГУ</td>
+				      </a>
+				      <td class="evnt-txt-center">17-19 июня 2021</td>
+				      <td class="evnt-txt-center">Бесплатно</td>
+				      <td class="evnt-txt-center">
+					    <a href="./img/jpg/certs/lshp-2021.jpg" target="_blank" rel="noopener noreferrer" style="font-weight: 600">
+					    [Сертификат об участии 💾]
+					    </a>
+					  </td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://www.smartcat.com/online-events/events/lfh_events_lfh4/" target="_blank" rel="noopener noreferrer">
+				        <td>#LocFromHome: Online Translation &amp; Localization Conference: Walk in your customer’s shoes</td>
+				      </a>
+				      <a>
+				        <td>от SmartCAT</td>
+				      </a>
+				      <td class="evnt-txt-center">27 мая 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://pnu.edu.ru/ru/news/2021-05-20-language/" target="_blank" rel="noopener noreferrer">
+				        <td>1-я городская олимпиада для школьников по японскому языку и страноведению Японии</td>
+				      </a>
+				      <a>
+				        <td>для ТОГУ</td>
+				      </a>
+				      <td class="evnt-txt-center">26 апреля - 6 мая 2021</td>
+				      <td class="evnt-txt-center">Бесплатно</td>
+				      <td class="evnt-txt-center">
+					    <a href="../link-unavailable" target="_blank" rel="noopener noreferrer" style="font-weight: 600">
+					    [Сертификат о проведении 💾]
+					    </a>
+					  </td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://xtrf.eu/our-events/summit-march-2021/" target="_blank" rel="noopener noreferrer">
+				        <td>XTRF Summit #online 2021</td>
+				      </a>
+				      <a>
+				        <td>от XTRF</td>
+				      </a>
+				      <td class="evnt-txt-center">30 марта 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/ru.png" srcset="https://flagcdn.com/w40/ru.png 2x">
+					  </td>
+				      <td>Серия открытых онлайн-лекций об устном переводе</td>
+				      <a>
+				        <td>от СПбГУ</td>
+				      </a>
+				      <td class="evnt-txt-center">
+				        <a href="https://events.spbu.ru/events/naimushin" target="_blank" rel="noopener noreferrer">
+				        6 марта
+				        </a>, <a href="https://events.spbu.ru/events/egorova" target="_blank" rel="noopener noreferrer">
+				        3 апреля
+				        </a>, <a href="https://events.spbu.ru/events/bomova" target="_blank" rel="noopener noreferrer">
+				        22 мая 2021
+				        </a>
+				      </td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://xtrf.eu/our-events/summit-university-2021/" target="_blank" rel="noopener noreferrer">
+				        <td>XTRF Summit #university 2021</td>
+				      </a>
+				      <a>
+				        <td>от XTRF</td>
+				      </a>
+				      <td class="evnt-txt-center">24 февраля 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
+					  </td>
+				      <a href="https://www.smartcat.com/online-events/events/lfh_events_lfh1" target="_blank" rel="noopener noreferrer">
+				        <td>#LocFromHome: Online Translation &amp; Localization Conference: Stronger by sharing</td>
+				      </a>
+				      <a>
+				        <td>от SmartCAT</td>
+				      </a>
+				      <td class="evnt-txt-center">10 февраля 2021</td>
+				      <td class="evnt-txt-center" colspan="2">Бесплатно</td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/jp.png" srcset="https://flagcdn.com/w40/jp.png 2x">
+					  </td>
+				      <a href="https://www.nanzan-u.ac.jp/English/academics/cjs/ijp/" target="_blank" rel="noopener noreferrer">
+				        <td>Language and Culture Course</td>
+				      </a>
+				      <a>
+				        <td>для Nanzan University Center for Japanese Studies</td>
+				      </a>
+				      <td class="evnt-txt-center">январь-март 2021</td>
+				      <td class="evnt-txt-center">Бесплатно</td>
+				      <td class="evnt-txt-center">
+					    <a href="./img/jpg/certs/nanzan.jpg" target="_blank" rel="noopener noreferrer" style="font-weight: 600">
+					    [Сертификат о проведении 💾]
+					    </a>
+					  </td>
+				    </tr>
+					
+				    <tr>
+				      <td>
+					    <img src="https://flagcdn.com/w20/ru.png" srcset="https://flagcdn.com/w40/ru.png 2x">
+					  </td>
+				      <a href="https://events.spbu.ru/events/translation" target="_blank" rel="noopener noreferrer">
+				        <td>I Летняя школа перевода</td>
+				      </a>
+				      <a>
+				        <td>от СПбГУ</td>
+				      </a>
+				      <td class="evnt-txt-center">18-20 июня 2020</td>
+				      <td class="evnt-txt-center">Бесплатно</td>
+				      <td class="evnt-txt-center">
+					    <a href="./img/jpg/certs/lshp-2020.jpg" target="_blank" rel="noopener noreferrer" style="font-weight: 600">
+					    [Сертификат об участии 💾]
+					    </a>
+					  </td>
+				    </tr>
+					
+				    </tbody>
+				  </table>
+				</details>
+				
+				<!--
+				<li>
+				  <img src="https://flagcdn.com/w20/ru.png" srcset="https://flagcdn.com/w40/ru.png 2x">
+				  <a href="https://jvtacademy.com/russia/" target="_blank" rel="noopener noreferrer">
+				  TOEFL® Test Preparation: The Insider’s Guide — от ETSx / edX — 23 октября 2021 - 5 июня 2022</a>
 				</li>
+				-->
+				
+				<!--
+				
+				<h3>Завершенные мероприятия:</h3>
 				
 				<li>
 				  <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x">
@@ -593,16 +1217,6 @@
 				  <a href="https://unbabel.com/langops-universe-2021/" target="_blank" rel="noopener noreferrer">
 				  LangOps Universe 2021 — от Unbabel / Slator — 27-28 октября 2021</a>
 				</li>
-				
-				<!--
-				<li>
-				  <img src="https://flagcdn.com/w20/ru.png" srcset="https://flagcdn.com/w40/ru.png 2x">
-				  <a href="https://jvtacademy.com/russia/" target="_blank" rel="noopener noreferrer">
-				  TOEFL® Test Preparation: The Insider’s Guide — от ETSx / edX — 23 октября 2021 - 5 июня 2022</a>
-				</li>
-				-->
-				
-				<h3>Завершенные мероприятия:</h3>
 				
 				<li>
 				  <img src="https://flagcdn.com/w20/ru.png" srcset="https://flagcdn.com/w40/ru.png 2x">
@@ -763,18 +1377,15 @@
 				  <a href="https://events.spbu.ru/events/translation" target="_blank" rel="noopener noreferrer">
 				  I Летняя школа перевода — от СПбГУ — 18-20 июня 2020</a> — 
 				  <a href="./img/jpg/certs/lshp-2020.jpg" target="_blank" rel="noopener noreferrer" style="font-weight: 600">[Сертификат об участии 💾]</a>
-				</li>
+				</li> -->
 				
 				<p>
 				  P.S. Я всегда стараюсь <strong>вести запись</strong> каждого мероприятия, и я бы выложил их публично, но авторские права — это святое, и мне не хотелось бы их нарушать
 				  <br>
-				  Однако, если вас заинтересовало одно из закрытых выступлений или вам понадобились какие-то материалы — вы знаете, кому писать 🤝
-				  <br>
-				  <br>
-				  P.S.S. Как можно заметить, далеко не всегда за участие полагаются <strong>сертификаты</strong>, — а если и полагаются, то стоят баснословных денег, — но это в нашем деле не главное 😌
+				  Однако если вас заинтересовало одно из закрытых выступлений или вам понадобились какие-то материалы — вы знаете, кому писать 🤝
 				</p>
 				
-		      </ul>
+		      <!-- </ul> -->
 		      </details>
 		    </div>
 		  </div>
