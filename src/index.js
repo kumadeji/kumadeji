@@ -166,8 +166,8 @@ function declOfNum(number, words) {
 }
 
 function getSmartCat() {
-  // fetch("https://jsonp.afeld.me/?callback=&url=https%3A%2F%2Fru.smartcat.com%2Fproxycat%2Fapi%2Ffreelancers%2Fprofile%2Fernest-bagretsov")
-  fetch("https://ml-cors.herokuapp.com/raw?url=https://ru.smartcat.com/proxycat/api/freelancers/profile/ernest-bagretsov")
+  // fetch("https://jsonp.afeld.me/?callback=&url=https%3A%2F%2Fru.smartcat.com%2Fproxycat%2Fapi%2Ffreelancers%2Fprofile%2Falexey-vladimirov")
+  fetch("https://ml-cors.herokuapp.com/raw?url=https://ru.smartcat.com/proxycat/api/freelancers/profile/alexey-vladimirov")
   
   // запасной: https://crp-proxy.herokuapp.com/
   
@@ -306,5 +306,5 @@ const message =
   "Любознательность – это фитиль в свече жизни. 🐺☝️";
 console.group("Привет! 👋");
 console.log(message);
-console.log("%cЭрнест Багрецов - kumadeji@yandex.ru", "font-size:20px");
+console.log("%cАлексей Владимиров - kumadeji@yandex.ru", "font-size:20px");
 console.groupEnd();

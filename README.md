@@ -1,2 +1,2 @@
-# Ernest Bagretsov
+# Alexey Vladimirov
 https://kumadeji.netlify.app/
