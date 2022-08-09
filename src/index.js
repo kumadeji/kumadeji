@@ -56,11 +56,11 @@ preloadertl.to('#preloader-text-under-2', {yPercent: -20, opacity: 0, delay: 0})
 preloadertl.to('.preloader', {transform: 'scaleY(0)', transformOrigin: 'top', delay: 0})
 preloadertl.call(enableScroll)
 
-// custom cursor
-const cursor = document.querySelector('.cursor');
-window.onmousemove = (e) => {
-    cursor.setAttribute('style', `top: ${e.pageY}px; left: ${e.pageX}px; z-index: 2;`)
-}
+// custom cursor - вырезан
+// const cursor = document.querySelector('.cursor');
+// window.onmousemove = (e) => {
+//     cursor.setAttribute('style', `top: ${e.pageY}px; left: ${e.pageX}px; z-index: 2;`)
+// }
 
 // navigation
 const tl = gsap.timeline({ paused: true, reversed: true });
