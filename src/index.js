@@ -257,7 +257,9 @@ window.onload = function () {
 function unYeps() {
   var YepsFrame = document.getElementsByTagName('iframe')[0];
   var YepsDoc = YepsFrame.contentDocument || YepsFrame.contentWindow.document;
-  var YepsElement = YepsDoc.getElementsByClassName("yeps-logo")[0];
+  // var YepsElement = YepsDoc.getElementsByClassName("yeps-logo")[0];
+  var YepsElement = YepsDoc.getElementsByClassName("yeps-logo-text")[0];
+  // временно изменил здесь для теста 09.08.2022
 
   YepsElement.style.display = "none";
 }
