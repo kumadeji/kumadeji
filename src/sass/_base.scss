@@ -115,7 +115,7 @@ body {
   height: 100%;
   max-width: 100%;
   overflow-x: hidden !important;
-  cursor: none;
+  // cursor: none;
 
   @media only screen and (min-width: 20em) {
     // big desktop
@@ -354,24 +354,26 @@ section {
    custom cursor - вырезан
 ---------------------------*/
 
-// .cursor {
-//     width: 2rem;
-//     height: 2rem;
-//     border: 2.5px solid $black;
-//     border-radius: 50%;
-//     position: absolute;
-//     top: -10rem;
-//     left: -10rem;
-//     pointer-events: none;
-//     transform: translate(-50%, -50%);
-//     transform-origin: 100% 100%;
-//     transition: all .3s ease;
-//     transition-property: background, transform;
-// 
-//     @media only screen and (max-width: 62.5em) { // tab-land
-//         opacity: 0;
-//     }
-// }
+/*--------------------------
+.cursor {
+    width: 2rem;
+    height: 2rem;
+    border: 2.5px solid $black;
+    border-radius: 50%;
+    position: absolute;
+    top: -10rem;
+    left: -10rem;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transform-origin: 100% 100%;
+    transition: all .3s ease;
+    transition-property: background, transform;
+
+    @media only screen and (max-width: 62.5em) { // tab-land
+        opacity: 0;
+    }
+}
+---------------------------*/
 
 /*--------------------------
     typography
