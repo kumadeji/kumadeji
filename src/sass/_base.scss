@@ -417,9 +417,15 @@ section {
 	}
   }
   &-6 {
-    margin-left: 1rem;
-    // margin: 1rem;
-	font-size: 2rem;
+    background: #ffffff40;
+    border: 1.5px solid #00000047;
+    cursor: pointer;
+    box-shadow: 0 15px 15px rgb(0 0 0 / 16%);
+    padding-left: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+	
+	font-size: 1.8rem;
     letter-spacing: -0.5px;
     font-family: $tertiary-font;
     @media (max-width: $bp-mobile) {
