@@ -120,7 +120,8 @@
     border: solid 1px $black;
 	
 	p {
-	  margin: 1rem;
+	  margin-top: 1rem;
+	  margin-bottom: 1rem;
 	  
 	  @media (max-width: $bp-mobile) {
 	    text-align: center;
