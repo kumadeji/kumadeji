@@ -359,8 +359,15 @@
 }
 
 .headtext-second {
-  margin: 15px 0px 5px 0;
+  // ВРЕМЕННО ЗАМЕНЕНО ИЗ-ЗА ДОБАВЛЕНИЯ НАДПИСИ О ЗАМЕНЕ РЕЗЮМЕ
+  // margin: 15px 0px 5px 0;
+  margin: 10px 0px 5px 0;
   font-size: 1.545rem;
+}
+
+.headtext-third {
+  margin: 10px 0px 5px 0;
+  font-size: 1rem;
 }
 
 .cv-link {
