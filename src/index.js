@@ -307,5 +307,5 @@ const message =
   "Любознательность – это фитиль в свече жизни. 🐺☝️";
 console.group("Привет! 👋");
 console.log(message);
-console.log("%cАлексей Владимиров - kumadeji@yandex.ru", "font-size:20px");
+console.log("%cАлексей Владимиров - hey@kumadeji.ru", "font-size:20px");
 console.groupEnd();
